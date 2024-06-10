@@ -1,0 +1,110 @@
+.root {
+  @apply flex flex-col items-center py-10 lg:py-20;
+
+  .mainText {
+    @apply flex flex-col items-center space-y-4 lg:space-y-8;
+
+    .title {
+      @apply px-[10%] text-center text-base font-bold md:text-4xl md:leading-[48px] lg:text-[48px] lg:leading-[72px];
+    }
+
+    .description {
+      @apply max-w-[480px] text-center text-sm lg:text-base;
+    }
+  }
+
+  .secNames {
+    @apply flex flex-col items-center gap-x-8 gap-y-4 py-12 lg:flex-row lg:justify-center;
+
+    li {
+      @apply cursor-pointer text-xl underline;
+    }
+
+    .active {
+      @apply font-bold text-success;
+    }
+  }
+
+  .about {
+    @apply grid w-full grid-cols-1 gap-4 lg:grid-cols-2;
+
+    .text {
+      @apply space-y-10 py-10;
+
+      .control {
+        @apply text-sm md:text-base;
+
+        .head {
+          @apply mb-2 font-bold;
+        }
+
+        .body {
+          @apply mb-8;
+        }
+
+        .list {
+          @apply pl-4 text-sm md:text-base;
+
+          li {
+            @apply flex gap-x-2 before:mt-1.5 before:h-2 before:w-2 before:shrink-0 before:rounded-full before:bg-light;
+          }
+        }
+      }
+    }
+
+    .image {
+      @apply flex h-full w-full items-center;
+    }
+  }
+
+  .solution {
+    @apply grid w-full grid-cols-1 gap-20 lg:grid-cols-2;
+
+    .image {
+      @apply flex h-full w-full items-center;
+    }
+
+    .choices {
+      & > h1 {
+        @apply mb-10 text-[36px] font-bold leading-[48px] xl:mb-14 xl:text-[48px] xl:leading-[72px];
+      }
+      & > p {
+        @apply mb-6 text-lg font-bold xl:mb-10;
+      }
+      .list {
+        @apply space-y-10 xl:space-y-8;
+
+        .choice {
+          @apply flex gap-x-6;
+
+          .text {
+            @apply flex flex-col justify-center gap-y-2 text-sm;
+
+            .head {
+              @apply font-bold;
+            }
+
+            .body {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .marks {
+    @apply flex w-full flex-col items-center gap-y-8 py-10 xl:gap-y-14;
+
+    h1 {
+      @apply text-center text-base font-bold leading-[48px] md:text-[36px] md:leading-[48px] xl:text-[54px] xl:leading-[81px];
+    }
+
+    .list {
+      @apply grid w-full max-w-[750px] grid-cols-1 gap-6 border-b-1 border-t-1 border-danger py-8 md:grid-cols-2;
+
+      li {
+        @apply flex justify-center gap-x-2 md:justify-start xl:text-2xl;
+      }
+    }
+  }
+}

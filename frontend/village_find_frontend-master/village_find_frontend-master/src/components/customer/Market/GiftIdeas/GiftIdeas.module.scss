@@ -1,0 +1,65 @@
+.root {
+  @apply py-10;
+
+  .wrapper {
+    @apply mx-auto w-full space-y-8 md:w-full xl:w-2/3;
+
+    h1 {
+      @apply text-[20px] font-bold leading-[24px] xl:text-[28px] xl:leading-[42px];
+    }
+
+    .container {
+      @apply grid grid-cols-1 gap-12 md:grid-cols-2;
+
+      .image {
+        @apply rounded-md shadow-2xl;
+
+        img {
+          @apply h-full w-full;
+        }
+      }
+
+      .text {
+        @apply flex flex-col justify-center gap-y-4 text-[14px] leading-[18px] xl:text-[16px] xl:leading-[24px];
+
+        .head {
+          @apply text-[16px] font-bold leading-[20px] xl:text-[20px] xl:leading-[30px];
+        }
+
+        .pricing {
+          @apply text-[12px] xl:text-[13px] xl:leading-[18px];
+
+          .price {
+            @apply text-[14px] font-bold leading-[18px] xl:text-[16px] xl:leading-[25px];
+          }
+
+          .totprice {
+            @apply space-x-2;
+
+            .totprice {
+              @apply line-through;
+            }
+            .discount {
+              @apply text-light;
+            }
+          }
+
+          .minimum {
+          }
+        }
+
+        .tags {
+          @apply space-x-2 text-xs;
+
+          span {
+            @apply rounded-full bg-warning px-2 py-1;
+          }
+        }
+
+        .button {
+          @apply self-start text-[14px] leading-[18px] xl:text-[20px] xl:leading-[28px];
+        }
+      }
+    }
+  }
+}

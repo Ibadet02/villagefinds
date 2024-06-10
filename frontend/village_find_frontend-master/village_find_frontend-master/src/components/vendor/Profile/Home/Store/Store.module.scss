@@ -1,0 +1,49 @@
+.root {
+  .container {
+    @apply w-full space-y-10 lg:w-5/6;
+  }
+
+  h2 {
+    @apply font-bold;
+  }
+
+  .store,
+  .images {
+    @apply flex flex-col gap-y-6;
+  }
+
+  .form {
+    @apply space-y-4;
+
+    & > p,
+    & .control p {
+      @apply font-medium;
+    }
+
+    .horizon {
+      @apply grid grid-cols-1 gap-x-8 gap-y-4 lg:grid-cols-2;
+    }
+
+    .control {
+      @apply space-y-2;
+
+      p {
+        span {
+          @apply font-normal italic text-success;
+        }
+      }
+
+      .visible {
+        @apply font-semibold text-success;
+      }
+    }
+
+    .desc {
+      @apply w-full;
+    }
+  }
+
+  .updateBtn {
+    @apply self-end rounded-full bg-dark px-6 py-2 text-xs text-white;
+  }
+}

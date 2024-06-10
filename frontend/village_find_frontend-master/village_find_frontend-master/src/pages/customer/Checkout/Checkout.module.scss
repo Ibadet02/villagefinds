@@ -1,0 +1,15 @@
+.root {
+  @apply flex flex-col gap-10 py-8 xl:grid xl:grid-cols-3 xl:py-20;
+
+  .contentPanel {
+    @apply flex flex-col gap-y-10 xl:col-span-2;
+  }
+
+  .summary {
+    @apply hidden xl:block;
+  }
+}
+
+.fullWidth {
+  @apply flex flex-col py-0;
+}

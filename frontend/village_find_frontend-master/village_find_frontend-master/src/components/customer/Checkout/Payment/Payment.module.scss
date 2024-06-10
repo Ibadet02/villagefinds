@@ -1,0 +1,79 @@
+.root {
+  @apply space-y-8;
+
+  .head {
+    @apply text-[28px] font-bold leading-[20px];
+  }
+
+  .body {
+    @apply space-y-7;
+
+    .element {
+      @apply space-y-2;
+
+      .title {
+        @apply text-[16px] font-bold leading-[25px];
+      }
+
+      .input {
+        @apply w-full;
+
+        input {
+          @apply rounded-none border-0;
+        }
+      }
+
+      & > .input input {
+        @apply rounded-md border-1 border-primary shadow-md;
+      }
+
+      & > .vertics {
+        @apply overflow-hidden rounded-md border-1 border-primary shadow-md;
+
+        .horizon {
+          @apply flex;
+
+          > .element {
+            @apply grow;
+          }
+
+          .hdivider {
+            @apply border-r-1 border-primary;
+          }
+        }
+
+        .vdivider {
+          @apply w-full border-t-1 border-primary;
+        }
+
+        .element {
+          @apply px-4 py-3;
+        }
+      }
+
+      .saveLink {
+        @apply space-y-4 p-4;
+
+        .checkPanel {
+          @apply flex cursor-pointer items-center gap-x-6;
+
+          span {
+            @apply flex aspect-square w-[18px] shrink-0 items-center justify-center rounded-[4px] border-1 border-primary;
+          }
+
+          .label {
+            @apply text-[16px] font-medium leading-[25px];
+          }
+        }
+
+        .statement {
+          @apply text-[13px] font-medium leading-[18px] text-[#969494];
+        }
+      }
+    }
+  }
+
+  .payBtn {
+    @apply w-full rounded-md py-4 text-[20px] uppercase leading-[27px];
+  }
+}

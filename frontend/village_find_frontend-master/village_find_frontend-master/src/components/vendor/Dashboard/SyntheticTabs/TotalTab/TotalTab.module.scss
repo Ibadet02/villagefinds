@@ -1,0 +1,33 @@
+.root {
+  @apply px-20 pb-6 pt-10;
+
+  .container {
+    @apply mx-auto w-fit;
+
+    .total {
+      @apply mb-6 flex gap-4;
+
+      .count {
+        @apply flex flex-col items-center gap-y-10 bg-primary py-2 shadow-none;
+
+        span {
+          @apply text-2xl font-bold;
+        }
+      }
+    }
+
+    .revenue {
+      @apply flex items-center justify-between gap-x-10 rounded-2xl bg-info px-4 py-8;
+
+      p {
+        span {
+          @apply font-bold;
+        }
+      }
+
+      .percent {
+        @apply text-2xl font-bold text-success;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.container {
+  @apply space-y-4;
+
+  .buttonBar {
+    @apply flex w-full justify-end;
+
+    .button {
+      @apply rounded-full bg-dark px-12 py-2 text-white;
+    }
+  }
+}
+
+.name {
+  @apply flex gap-x-2;
+}
+
+.discount,
+.status {
+  @apply w-fit min-w-0;
+}
+
+.action {
+  @apply flex gap-x-6;
+
+  .button {
+    @apply rounded-full bg-dark px-7 py-2 text-white;
+  }
+
+  span {
+    @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-primary bg-warning;
+  }
+}

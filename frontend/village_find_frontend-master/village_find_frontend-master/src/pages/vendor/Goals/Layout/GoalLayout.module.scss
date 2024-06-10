@@ -1,0 +1,19 @@
+.root {
+  @apply flex gap-x-6;
+
+  .content {
+    @apply grow;
+  }
+
+  .rightBar {
+    @apply min-w-[250px] shrink-0 rounded-3xl bg-white py-12 pr-12;
+
+    .navItem {
+      @apply cursor-pointer rounded-br-full rounded-tr-full py-3 pl-10 pr-4;
+    }
+
+    .activeItem {
+      @apply bg-primary font-bold;
+    }
+  }
+}

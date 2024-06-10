@@ -1,0 +1,63 @@
+.root {
+  @apply flex flex-col items-center gap-y-20 py-24;
+
+  .head {
+    @apply text-center text-[20px] font-bold leading-[30px];
+  }
+
+  .reviewBar {
+    @apply grid w-full grid-cols-1 gap-4 xl:grid-cols-3;
+
+    .customer {
+      @apply space-y-2.5;
+
+      .rating {
+        @apply flex items-center gap-x-2;
+
+        p {
+          @apply text-[20px] font-bold leading-[30px] text-success;
+        }
+      }
+
+      .text {
+        @apply text-[16px] leading-[25px];
+      }
+    }
+
+    .total {
+      @apply border-b-0.5 border-t-0.5 border-primary py-4 xl:flex xl:flex-col xl:items-center xl:border-b-0 xl:border-l-0.5 xl:border-r-0.5 xl:border-t-0 xl:py-0;
+
+      .reviewItem {
+        @apply flex items-center gap-x-6;
+
+        .progress {
+          @apply relative h-2 w-24 rounded-full bg-GRay;
+
+          .loading {
+            @apply absolute left-0 top-0 h-full rounded-full bg-light p-0;
+          }
+        }
+      }
+    }
+
+    .button {
+      @apply xl:flex xl:items-center xl:justify-center;
+
+      .cancelBtn {
+        @apply w-[200px] px-10 py-3.5 text-[16px] font-normal leading-[25px];
+      }
+    }
+  }
+
+  .reviewList {
+    @apply flex w-full flex-col items-center gap-y-20;
+
+    .reviews {
+      @apply space-y-10 self-start;
+    }
+
+    .loadBtn {
+      @apply w-[180px] bg-dark py-1.5 text-[20px] leading-[30px] xl:bg-success;
+    }
+  }
+}

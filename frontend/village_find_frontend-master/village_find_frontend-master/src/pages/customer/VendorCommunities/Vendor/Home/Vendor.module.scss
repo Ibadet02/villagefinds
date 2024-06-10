@@ -1,0 +1,73 @@
+.root {
+  @apply py-8;
+  > .slides {
+    @apply mb-8 w-full rounded-md;
+  }
+  > .info {
+    @apply mb-24 flex justify-between;
+    > .vendor {
+      @apply flex items-center gap-x-8;
+      > img {
+        @apply aspect-square w-24 shrink-0 shadow-xl;
+      }
+      > div {
+        @apply flex flex-col items-start gap-y-0.5;
+        > .name {
+          @apply text-xl font-bold text-dark;
+        }
+        > .desc {
+          @apply mb-1 text-sm;
+        }
+        > button {
+          @apply rounded-md bg-dark px-6 py-0.5 italic text-white;
+        }
+      }
+    }
+    > .community {
+      @apply flex flex-col gap-y-4;
+      > p {
+        @apply font-bold text-dark;
+      }
+      > div {
+        @apply flex items-center gap-x-8;
+        > p {
+          @apply cursor-pointer text-sm text-light underline;
+        }
+        > img {
+          @apply aspect-square w-6 shrink-0;
+        }
+      }
+    }
+  }
+  > .announcement > .container {
+    @apply mb-16 flex flex-col gap-6 rounded-sm bg-lightgray px-8 py-6 xl:flex-row xl:items-start;
+    > .title {
+      @apply flex shrink-0 flex-col gap-y-2;
+      p {
+        @apply text-[20px] font-bold leading-[30px];
+      }
+      span {
+        @apply text-[12px] leading-[18px];
+      }
+    }
+
+    > .content {
+      @apply grow;
+      p {
+        @apply text-[12px] leading-[18px];
+      }
+      p.collapsed {
+        @apply line-clamp-3;
+      }
+      span {
+        @apply cursor-pointer text-[12px] leading-[18px] underline;
+      }
+    }
+  }
+  > .section {
+    @apply flex gap-x-8;
+  }
+  > .pagination {
+    @apply flex justify-end py-20;
+  }
+}

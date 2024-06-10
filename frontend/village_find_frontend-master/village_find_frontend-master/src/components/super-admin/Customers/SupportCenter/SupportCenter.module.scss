@@ -1,0 +1,32 @@
+.root {
+  .container {
+    @apply w-full lg:w-11/12;
+  }
+  .actions {
+    @apply flex gap-x-2;
+
+    p {
+      @apply mb-2 text-white;
+    }
+
+    .button {
+      @apply rounded-full px-6 py-3 text-xs;
+    }
+
+    .submit {
+      @apply bg-success text-white;
+    }
+
+    .reset {
+      @apply border border-primary bg-white text-primary;
+    }
+  }
+
+  .tableToolbar {
+    @apply my-8 text-base;
+  }
+
+  .tableBody {
+    @apply z-0 overflow-x-auto;
+  }
+}

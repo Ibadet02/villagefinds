@@ -1,0 +1,23 @@
+.root {
+  @apply w-full overflow-x-auto;
+
+  .header {
+    @apply flex w-fit min-w-fit items-center rounded-full bg-primary text-base;
+
+    span {
+      @apply shrink-0 rounded-full px-5 py-4 font-medium;
+    }
+
+    .exSpan {
+      @apply w-8;
+    }
+  }
+
+  .body {
+    @apply mb-8 flex h-fit w-fit flex-col;
+  }
+}
+
+.divider {
+  @apply border-t-0.5 border-t-secondary;
+}

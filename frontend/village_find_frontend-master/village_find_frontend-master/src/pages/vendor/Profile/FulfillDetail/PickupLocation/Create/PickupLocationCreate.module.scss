@@ -1,0 +1,76 @@
+.root {
+  .container {
+    @apply w-full space-y-4 lg:w-2/3;
+
+    .inputWithButton {
+      @apply flex flex-col gap-y-0.5;
+      > p {
+        @apply font-medium;
+      }
+      > .control {
+        @apply flex items-end gap-x-4;
+      }
+    }
+
+    .pickup {
+      @apply grid grid-cols-1 gap-x-4 lg:grid-cols-3;
+      .control {
+        @apply w-full;
+        > p {
+          @apply font-medium;
+        }
+      }
+      .pickupDay {
+        @apply w-full min-w-0;
+      }
+      .pickupPicker {
+        @apply w-full rounded-full bg-primary px-4 py-2;
+        > .pickInput > input {
+          @apply py-0.5;
+        }
+      }
+    }
+
+    .control {
+      @apply space-y-2;
+      > p {
+        @apply font-medium;
+      }
+      .input {
+        @apply w-full;
+      }
+      .fit {
+        @apply w-fit;
+      }
+    }
+
+    .radio {
+      @apply flex gap-x-12 rounded-full border-1 border-primary px-4 py-2;
+      > span {
+        @apply text-primary;
+      }
+    }
+
+    .radio.active {
+      @apply border-none bg-dark;
+      > p {
+        @apply text-white;
+      }
+      > span {
+        @apply bg-dark;
+      }
+    }
+  }
+
+  .buttonBar {
+    @apply flex justify-end gap-x-4;
+  }
+}
+
+.button {
+  @apply rounded-full bg-dark px-7 py-2 text-white;
+}
+
+.cancelButton {
+  @apply border border-primary bg-white text-primary;
+}

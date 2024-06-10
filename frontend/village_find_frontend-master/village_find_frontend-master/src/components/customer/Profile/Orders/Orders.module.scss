@@ -1,0 +1,98 @@
+.root {
+  @apply flex flex-col gap-x-4 py-10 xl:flex-row;
+
+  > .sidebar {
+    @apply flex flex-col gap-y-5 xl:basis-64;
+    > .header {
+      @apply text-[24px] font-bold leading-[20px] sm:text-[32px] sm:leading-[43px];
+    }
+    > .description {
+      @apply text-[13px] leading-[16px];
+    }
+    > .status {
+      @apply flex items-center justify-between rounded-md bg-success px-4 py-3.5;
+      > p {
+        @apply text-white;
+      }
+      > span {
+        @apply flex h-4 w-4 items-center justify-center rounded-full bg-white text-xs text-success;
+      }
+    }
+  }
+
+  > .divider {
+    @apply w-[1px] bg-secondary;
+  }
+
+  > .main {
+    @apply mt-4 flex grow flex-col gap-y-2 overflow-x-auto;
+
+    > .toolbar {
+      @apply flex flex-col gap-y-2 md:flex-row md:items-center md:justify-between;
+      > .search {
+        @apply flex self-end md:self-start;
+        > input {
+          @apply min-w-[250px] rounded-l-[4px] border-2 border-r-0 border-success px-4 py-2.5 text-[13px] leading-[18px] outline-none;
+        }
+        > span {
+          @apply flex w-10 shrink-0 cursor-pointer items-center justify-center rounded-r-[4px] bg-dark;
+          > svg {
+            @apply fill-white;
+          }
+        }
+      }
+      > .range {
+        @apply flex items-center gap-x-2 self-end;
+        > p {
+          @apply text-[13px] leading-[18px];
+          > span {
+            @apply font-bold;
+          }
+        }
+        > .rangeSelect {
+          @apply min-w-[150px] rounded-t-[4px] border-1 border-primary;
+          > div:nth-child(1) {
+            @apply mb-0 rounded-[4px] border-none bg-primary px-1 py-2;
+          }
+          > div:nth-child(2) {
+            @apply mt-0 rounded-b-[4px] rounded-t-none border-1 bg-primary px-0 py-0;
+            > span {
+              @apply px-2 py-0.5 text-left text-[13px] leading-[18px] hover:cursor-pointer hover:bg-primary/80;
+            }
+          }
+        }
+      }
+    }
+    > .orders {
+      @apply flex flex-col gap-y-8 overflow-x-auto;
+
+      > .order {
+        @apply overflow-hidden rounded-[4px] border-1 border-[#BDBDBD];
+        > .header {
+          @apply flex items-center justify-between bg-primary p-4;
+          > .caption {
+            @apply flex flex-col gap-y-1.5;
+            > p.title {
+              @apply font-bold;
+            }
+            > p.time {
+              @apply text-[13px] leading-[18px];
+            }
+          }
+          > .spent {
+            @apply flex flex-col gap-y-1.5;
+            > p.title {
+              @apply font-bold;
+            }
+            > p.money {
+              @apply text-[13px] leading-[18px];
+            }
+          }
+        }
+        > .body {
+          @apply flex flex-col gap-y-4 overflow-x-auto px-4 py-6;
+        }
+      }
+    }
+  }
+}

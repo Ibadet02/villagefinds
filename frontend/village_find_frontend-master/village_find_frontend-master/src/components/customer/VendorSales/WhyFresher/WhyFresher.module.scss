@@ -1,0 +1,67 @@
+.root {
+  @apply w-full;
+
+  .back {
+    @apply flex aspect-[4/3] items-center bg-[url('/assets/customer/backs/howto.png')] bg-[length:auto_100%] bg-center bg-no-repeat md:aspect-[4/1];
+
+    .container {
+      @apply w-full;
+
+      h1 {
+        @apply text-[36px] font-bold leading-[48px] text-white md:text-[48px] md:leading-[72px];
+      }
+    }
+  }
+
+  .reasons {
+    @apply grid grid-cols-1 gap-x-20 gap-y-6 py-10 md:py-14 lg:grid-cols-2 xl:py-20;
+
+    .reason {
+      @apply space-y-2;
+
+      .head {
+        @apply text-lg font-bold;
+      }
+    }
+  }
+
+  .simpleTech {
+    @apply h-fit w-full bg-[url('/assets/customer/sales/pattern.png')] bg-[length:200%_100%] bg-center bg-no-repeat py-10 md:py-14 xl:py-20;
+
+    .container {
+      @apply flex w-full flex-col items-center;
+
+      & > h1 {
+        @apply mb-5 text-xl font-bold md:text-[36px] md:leading-[48px] xl:text-[48px] xl:leading-[72px];
+      }
+
+      & > p {
+        @apply mb-20 px-6 text-center;
+      }
+
+      .images {
+        @apply grid grid-cols-3 grid-rows-3 gap-2;
+
+        .text {
+          @apply col-span-1 row-span-1 flex flex-col space-y-2 pl-2 text-sm font-bold md:text-[24px] md:leading-[32px] xl:text-[32px] xl:leading-[48px];
+        }
+
+        .image1 {
+          @apply col-span-2 col-start-2 row-start-1 w-[80%] justify-self-end;
+        }
+
+        .image2 {
+          @apply row-span-2 row-start-2;
+        }
+
+        .image3 {
+          @apply col-span-2 col-start-2 row-span-2 row-start-2;
+        }
+
+        img {
+          @apply h-full w-full;
+        }
+      }
+    }
+  }
+}

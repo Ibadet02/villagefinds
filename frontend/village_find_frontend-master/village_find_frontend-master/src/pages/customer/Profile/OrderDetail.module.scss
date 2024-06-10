@@ -1,0 +1,181 @@
+.root {
+  @apply flex flex-col py-6;
+
+  > .header {
+    > .back {
+      @apply flex items-center gap-x-4 py-12 text-[20px] font-medium leading-[27px];
+      > span {
+        @apply flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-white drop-shadow-xl;
+        > svg {
+          @apply text-xl;
+        }
+      }
+    }
+  }
+  > .main {
+    @apply flex flex-col gap-y-10;
+    > .heading {
+      @apply text-[20px] font-bold leading-[30px];
+    }
+    > .mycart {
+      > .location {
+        @apply mb-20;
+        > .title {
+          @apply mb-20 text-base font-bold text-dark;
+        }
+        > .step {
+          @apply relative flex w-fit gap-x-12 after:absolute after:left-[70px] after:top-5 after:-z-50 after:h-0.5 after:w-4/5 after:bg-dark;
+          > .item {
+            @apply flex flex-col items-center gap-y-8;
+            > span {
+              @apply z-10 flex aspect-square w-10 items-center justify-center rounded-full border-1 border-primary bg-white font-avenir text-[25px] leading-[39px];
+            }
+            > span.active {
+              @apply bg-success text-white;
+            }
+            > p {
+              @apply max-w-[130px] text-center font-medium;
+            }
+          }
+        }
+      }
+      > .basicInfo {
+        @apply flex gap-x-10;
+        .title {
+          @apply font-bold;
+        }
+        span {
+          @apply text-light;
+        }
+        > .vendor {
+          @apply flex items-center gap-x-2;
+          > .logo {
+            @apply flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white drop-shadow-lg;
+          }
+        }
+      }
+      > .detail {
+        @apply flex flex-col gap-y-8 p-12;
+        > .shipping {
+          @apply flex flex-col gap-y-4;
+          > p > span {
+            @apply font-bold;
+          }
+          > .divider {
+            @apply h-[1px] bg-primary;
+          }
+        }
+        > .product {
+          @apply flex gap-x-4;
+          > img {
+            @apply aspect-square w-24 rounded-md;
+          }
+          > .cartInfo {
+            @apply flex basis-64 flex-col gap-y-2.5;
+            > .heading {
+              > .title {
+                @apply text-base font-bold;
+              }
+              > .unitPrice {
+                @apply text-[10px] leading-[16px];
+              }
+            }
+          }
+          > .count {
+            @apply basis-48;
+            > div {
+              @apply flex items-center justify-center rounded-[4px] bg-GRay px-16 py-3;
+              > p {
+                @apply text-xs;
+              }
+            }
+          }
+          > .totalPrice {
+            @apply flex basis-48 flex-col items-end;
+            > .title {
+              @apply text-[13px] leading-[18px];
+            }
+            > .price {
+              @apply text-base;
+            }
+          }
+        }
+        > .subtotal {
+          @apply flex flex-col gap-y-4;
+          > .title {
+            @apply text-[20px] font-bold leading-[30px];
+          }
+          > .divider {
+            @apply h-0.5 bg-primary;
+          }
+          > .detail {
+            @apply flex justify-between;
+            > .pickuplocation {
+              @apply rounded-lg bg-primary px-8 pb-9 pt-1.5;
+              > .title {
+                @apply mb-6 text-[16px] font-medium leading-[25px];
+              }
+              > .instruction {
+                @apply mb-2 max-w-[320px] text-[13px] leading-[18px];
+                > span {
+                  @apply font-medium;
+                }
+              }
+              > .control {
+                @apply mb-2 flex gap-x-2;
+                > p {
+                  @apply text-[13px] leading-[18px];
+                }
+                > .location {
+                  @apply flex flex-col gap-y-2;
+                  > p {
+                    @apply text-[13px] leading-[18px];
+                  }
+                  > p.address {
+                    @apply text-success;
+                  }
+                }
+              }
+            }
+            > .summary {
+              @apply flex w-full max-w-[300px] flex-col gap-y-4 justify-self-end;
+              > .row {
+                @apply flex items-center justify-between;
+                > p {
+                  @apply font-medium;
+                }
+              }
+              > .row.total > .spent {
+                @apply font-bold;
+              }
+              > .divider {
+                @apply h-[1px] bg-primary;
+              }
+            }
+          }
+        }
+        > .subscription {
+          @apply flex justify-between rounded-md bg-white px-10 py-8 drop-shadow-xl;
+          > .shipment {
+            @apply flex flex-col gap-y-4;
+            > .date > span {
+              @apply font-bold;
+            }
+            > .charge {
+              @apply text-[13px] font-medium leading-[18px];
+            }
+          }
+          > .actions {
+            @apply flex items-center gap-x-9;
+            > .pause {
+              @apply flex gap-x-4;
+            }
+            > .cancelBtn {
+              @apply rounded-md bg-white px-6 py-2.5 drop-shadow-lg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.root {
+  @apply space-y-8 p-4;
+
+  .backImage {
+    img {
+      @apply w-full;
+    }
+  }
+
+  .container {
+    @apply flex flex-col space-y-6 p-8;
+
+    .header {
+      @apply space-y-6 self-center text-center;
+
+      h1 {
+        @apply text-2xl;
+      }
+
+      .searchInput {
+        @apply w-fit min-w-[450px];
+      }
+    }
+
+    .posts {
+      @apply flex flex-col gap-y-8;
+
+      .postPanel {
+        @apply flex flex-col gap-y-10;
+
+        & > h2 {
+          @apply font-bold;
+        }
+
+        .panelBody {
+          @apply grid grid-cols-1 gap-4 md:grid-cols-3;
+
+          .postItem {
+            @apply flex flex-col gap-y-6;
+
+            .image {
+              @apply cursor-pointer rounded-2xl shadow-lg;
+            }
+
+            .content {
+              @apply space-y-2;
+
+              p {
+                @apply font-bold;
+
+                span {
+                  @apply font-normal;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .divider {
+        @apply h-0.5 w-full bg-secondary;
+      }
+    }
+  }
+}

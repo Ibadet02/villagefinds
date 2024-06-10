@@ -1,0 +1,59 @@
+.root {
+  .form {
+    @apply flex flex-col gap-y-4 xl:w-2/3;
+
+    .horizon {
+      @apply grid grid-cols-1 gap-x-4 xl:grid-cols-3;
+    }
+
+    .control {
+      .label {
+        @apply mb-2 font-medium;
+      }
+
+      .input {
+        @apply placeholder-primary;
+      }
+    }
+
+    .radios {
+      @apply flex gap-x-3;
+
+      .button {
+        @apply flex w-full max-w-[130px] cursor-pointer items-center justify-between rounded-full border-1 border-primary px-3 py-2;
+
+        span {
+          @apply h-4 w-4 shrink-0 rounded-full border-1 border-primary;
+        }
+
+        p {
+          @apply text-[16px] leading-[25px];
+        }
+      }
+
+      .active {
+        @apply bg-dark;
+
+        span {
+          @apply border-2 border-white;
+        }
+
+        p {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    @apply flex justify-end gap-x-4;
+
+    .button {
+      @apply rounded-full border-1 border-primary bg-white px-9 py-2.5 text-[13px] font-medium leading-[18px];
+    }
+
+    .update {
+      @apply bg-dark text-white;
+    }
+  }
+}

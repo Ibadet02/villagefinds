@@ -1,0 +1,67 @@
+.root {
+  @apply relative h-full;
+
+  .subNavbar {
+    @apply flex h-14 w-full sm:hidden;
+
+    .navItem {
+      @apply flex w-1/2 cursor-pointer items-center justify-center;
+    }
+
+    .activeItem {
+      @apply bg-success text-white;
+    }
+  }
+
+  .loginBody {
+    @apply relative h-full sm:mb-0;
+
+    img {
+      @apply absolute -z-10 hidden h-full w-full sm:block;
+    }
+
+    .container {
+      @apply flex h-full px-10 py-20 sm:flex-col sm:justify-center;
+
+      .form {
+        @apply flex w-full flex-col sm:max-w-[360px];
+
+        .navlink {
+          @apply mb-6 hidden sm:flex sm:gap-x-8;
+
+          li {
+            @apply cursor-pointer text-white;
+          }
+
+          .active {
+            @apply font-bold text-success underline;
+          }
+        }
+
+        .control {
+          @apply mb-2 space-y-4;
+
+          .input {
+            @apply rounded-md border border-primary sm:border-none;
+          }
+        }
+
+        span {
+          @apply mb-4 text-right text-xs text-success sm:text-white;
+        }
+
+        .loginButton {
+          @apply mb-4 rounded-md text-xs;
+        }
+
+        .signupLink {
+          @apply text-right text-xs text-light sm:text-white;
+
+          span {
+            @apply ml-0.5 cursor-pointer text-success underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.root {
+  @apply cursor-pointer bg-transparent text-base font-normal text-primary;
+}
+
+.focused {
+  @apply bg-gray-200 text-primary;
+}

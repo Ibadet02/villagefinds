@@ -1,0 +1,217 @@
+.root {
+  @apply grid grid-cols-1 gap-4 py-6 xl:grid-cols-5;
+
+  .link {
+    @apply flex items-center justify-between xl:col-span-3;
+
+    p {
+      @apply cursor-pointer text-[13px] leading-[18px] underline;
+    }
+
+    .comInfo {
+      @apply flex items-center gap-x-4;
+
+      > img {
+        @apply aspect-square w-6 shrink-0;
+      }
+    }
+  }
+
+  .blank {
+    @apply xl:col-span-2;
+  }
+
+  .images {
+    @apply flex gap-2.5 xl:col-span-3;
+
+    .smallImages {
+      @apply flex max-w-[84px] flex-col gap-2.5;
+
+      img {
+        @apply w-full rounded-sm opacity-30;
+      }
+
+      img.active {
+        @apply opacity-100;
+      }
+    }
+
+    .topicImage {
+      @apply grow overflow-y-hidden;
+      > img {
+        @apply h-auto w-full;
+      }
+    }
+  }
+
+  .info {
+    @apply flex flex-col gap-y-4 xl:col-span-2;
+
+    .head {
+      @apply flex items-center justify-between;
+
+      p {
+        @apply text-[20px] font-bold leading-[30px];
+      }
+    }
+
+    .style {
+      .lowerPrice {
+        @apply text-[16px] font-bold leading-[25px];
+      }
+
+      .realPrice {
+        .totalPrice {
+          @apply text-[13px] leading-[18px] text-warning line-through;
+        }
+
+        .discount {
+          @apply text-[13px] leading-[18px] text-light;
+        }
+      }
+
+      .centPrice {
+        @apply text-[13px] leading-[18px];
+      }
+
+      .style {
+        @apply flex flex-wrap gap-3;
+
+        .styleSelect {
+          & div:nth-child(2) {
+            @apply mt-1 px-0 py-2;
+
+            span {
+              @apply py-0 pl-4 text-left text-[14px] hover:rounded-none;
+            }
+          }
+        }
+      }
+    }
+
+    .color {
+      @apply space-y-2;
+
+      p {
+        @apply text-[13px] leading-[18px];
+
+        span {
+          @apply font-bold;
+        }
+      }
+
+      .colorBlock {
+        @apply flex gap-x-2;
+
+        span {
+          @apply h-10 w-10 rounded-md border-1 border-primary;
+        }
+      }
+    }
+
+    .personalization {
+      @apply flex items-center justify-between;
+
+      .dropdown {
+        @apply flex cursor-pointer items-center gap-x-2 rounded-full bg-[#F5F5F5] px-2.5 py-1 text-[16px] font-bold leading-[25px];
+      }
+
+      > p {
+        @apply text-[13px] leading-[18px];
+
+        span {
+          @apply font-bold;
+        }
+      }
+    }
+
+    .message {
+      @apply flex flex-col gap-y-8;
+
+      .example {
+        @apply text-[13px] leading-[18px];
+      }
+
+      .msgInput {
+        @apply flex flex-col items-end;
+
+        .dangerMessage {
+          @apply border-red-500;
+        }
+
+        .alerts {
+          @apply flex w-full justify-end;
+
+          .invalidLength {
+            @apply text-[11px] leading-[15px] text-red-500;
+          }
+
+          .letterLength {
+            @apply text-[8px] leading-[12px] text-primary;
+          }
+        }
+
+        .warning {
+          @apply justify-between;
+        }
+      }
+    }
+
+    .logo {
+      @apply flex flex-col gap-y-2;
+
+      > p {
+        @apply text-[16px] font-bold leading-[25px];
+      }
+    }
+
+    .quantity {
+      @apply flex h-10 w-full items-center rounded-md border-b-0.5 border-t-0.5 border-primary;
+
+      .minus,
+      .plus {
+        @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border-1 border-primary;
+      }
+
+      .plus {
+        @apply bg-dark;
+      }
+
+      p {
+        @apply grow text-center;
+      }
+
+      > span > svg {
+        @apply text-2xl;
+      }
+
+      > .plus > svg {
+        @apply fill-white;
+      }
+    }
+
+    .addToCartBtn {
+      @apply w-full bg-dark py-2 text-[16px] font-semibold leading-[25px];
+    }
+
+    .local {
+      @apply flex flex-col gap-y-2;
+
+      .header {
+        @apply text-base font-bold;
+      }
+
+      p {
+        @apply text-[13px] font-bold leading-[18px];
+
+        span {
+          @apply font-normal;
+        }
+      }
+
+      .concern span {
+        @apply underline;
+      }
+    }
+  }
+}

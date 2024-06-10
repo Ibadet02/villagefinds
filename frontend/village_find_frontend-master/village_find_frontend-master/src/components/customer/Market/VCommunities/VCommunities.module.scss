@@ -1,0 +1,51 @@
+.root {
+  @apply flex flex-col items-center gap-y-20 py-10 xl:py-20;
+
+  .head {
+    @apply max-w-[650px];
+
+    h1 {
+      @apply mb-6 text-center text-[24px] font-bold leading-[32px] xl:text-[48px] xl:leading-[72px];
+    }
+
+    p {
+      @apply text-center;
+    }
+  }
+
+  .container {
+    @apply flex w-full flex-col gap-y-6;
+
+    .title {
+      @apply text-[16px] font-bold leading-[24px] xl:text-[28px] xl:leading-[42px];
+    }
+
+    .communities {
+      @apply flex w-full gap-x-4 overflow-x-auto pb-2;
+
+      .shopvcom {
+        @apply flex w-[90%] shrink-0 cursor-pointer items-center gap-x-2 rounded-lg p-2 hover:shadow-md md:w-[50%] xl:w-[30%];
+
+        img {
+          @apply aspect-square h-full shrink-0;
+        }
+
+        .vcomText {
+          @apply flex h-full flex-col gap-y-2 text-xs;
+
+          .name {
+            @apply text-sm font-bold;
+          }
+
+          .catLabel {
+            @apply font-bold;
+          }
+
+          .category {
+            @apply self-start rounded-md bg-warning p-2;
+          }
+        }
+      }
+    }
+  }
+}

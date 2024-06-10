@@ -1,0 +1,124 @@
+.root {
+  @apply fixed left-0 top-0 z-[50] flex h-screen w-screen items-center justify-center bg-black/30;
+
+  .container {
+    @apply relative flex w-full max-w-[450px] flex-col gap-y-10 rounded-lg bg-white px-4 py-10 shadow-lg;
+
+    .content {
+      @apply flex flex-col items-center gap-y-6;
+
+      .head {
+        @apply space-y-2;
+
+        p {
+          @apply text-center;
+        }
+
+        .title {
+          @apply text-[20px] font-bold leading-[30px];
+        }
+
+        .text {
+          @apply text-[16px] font-medium leading-[25px];
+        }
+      }
+
+      .body {
+        @apply w-full;
+
+        .locPanel,
+        .datePanel {
+          @apply flex flex-col gap-y-2;
+        }
+
+        .location {
+          @apply flex w-full cursor-pointer items-center justify-between rounded-md border-1 border-[#BDBDBD] bg-lightgray px-4 py-1.5;
+
+          .text {
+            @apply space-y-1;
+
+            p {
+              @apply text-[13px] leading-[18px];
+            }
+
+            .name {
+              @apply font-bold;
+            }
+          }
+        }
+
+        .active {
+          @apply bg-dark;
+
+          p {
+            @apply text-white;
+          }
+
+          span {
+            @apply bg-transparent;
+          }
+        }
+
+        .timePanel {
+          @apply grid grid-cols-2 gap-x-3 gap-y-4;
+
+          .timeCell {
+            @apply flex cursor-pointer items-center justify-between rounded-md border-1 border-[#BDBDBD] bg-lightgray p-2;
+
+            .pickupdate {
+              @apply space-y-3;
+
+              .element {
+                @apply space-y-1;
+
+                p {
+                  @apply text-[13px] font-medium leading-[18px];
+                }
+
+                .title {
+                  @apply font-bold;
+                }
+              }
+            }
+
+            .radio span {
+              @apply bg-white;
+            }
+          }
+
+          .active {
+            @apply bg-dark;
+
+            .radio span {
+              @apply bg-transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .buttons {
+      @apply flex w-full gap-x-3;
+
+      .button {
+        @apply w-full py-4 text-[20px] font-normal leading-[30px];
+      }
+
+      .backBtn {
+        @apply border-1 border-danger bg-white text-success;
+      }
+
+      .updateBtn {
+        @apply text-white;
+      }
+    }
+
+    .closeBtn {
+      @apply absolute right-2.5 top-2 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full shadow-md;
+    }
+  }
+}
+
+.hide {
+  @apply hidden;
+}

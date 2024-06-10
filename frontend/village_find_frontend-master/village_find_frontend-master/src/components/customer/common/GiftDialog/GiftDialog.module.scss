@@ -1,0 +1,135 @@
+.root {
+  @apply fixed left-0 top-0 z-[50] flex h-screen w-screen items-center justify-center bg-black/30;
+
+  .container {
+    @apply relative flex w-full max-w-screen-md flex-col gap-y-14 rounded-lg bg-white px-8 py-10 shadow-lg;
+
+    .title {
+      @apply text-[20px] font-bold leading-[30px];
+    }
+
+    .existing {
+      @apply flex flex-col gap-y-40;
+
+      .text {
+        @apply text-[20px] font-medium leading-[30px];
+      }
+    }
+
+    .receiver {
+      @apply flex flex-col gap-y-8;
+
+      .text {
+        @apply text-[20px] font-medium leading-[30px];
+      }
+
+      .addrSelect {
+        & > div:nth-child(1) {
+          @apply rounded-md border-2 border-primary p-2.5 text-[16px] font-medium leading-[25px] text-primary;
+        }
+      }
+
+      .elements {
+        @apply flex flex-col gap-y-4;
+
+        .horizon {
+          @apply grid grid-cols-1 gap-x-4 xl:grid-cols-2;
+        }
+
+        .input {
+          @apply w-full;
+
+          input {
+            @apply border-1 border-primary text-[13px] font-medium leading-[18px] text-primary placeholder:text-[13px] placeholder:font-medium placeholder:leading-[18px] placeholder:text-primary focus:border-2 focus:border-danger;
+          }
+        }
+      }
+    }
+
+    .message {
+      @apply flex flex-col gap-y-10;
+
+      .element {
+        @apply flex flex-col gap-y-4;
+
+        .text {
+          @apply text-[20px] font-medium leading-[30px];
+        }
+
+        .msgInput {
+          @apply text-[13px] font-medium leading-[18px];
+
+          textarea {
+            @apply text-[13px] font-medium leading-[18px] text-primary placeholder:text-[13px] placeholder:font-medium placeholder:leading-[18px] placeholder:text-primary;
+          }
+        }
+      }
+    }
+
+    .giftAddr {
+      @apply flex flex-col gap-y-40;
+    }
+
+    .shippingAddr {
+      @apply flex flex-col gap-y-9;
+
+      .section {
+        @apply flex flex-col gap-y-4;
+
+        .title {
+          @apply text-[20px] font-medium leading-[30px];
+        }
+
+        .horizon {
+          @apply grid grid-cols-1 gap-4 xl:grid-cols-2;
+        }
+
+        .input {
+          @apply w-full;
+
+          input {
+            @apply border-1 border-primary text-[13px] font-medium leading-[18px] text-primary placeholder:text-[13px] placeholder:font-medium placeholder:leading-[18px] placeholder:text-primary focus:border-2 focus:border-danger;
+          }
+        }
+
+        .countrySelector {
+          & > div {
+            @apply font-medium;
+          }
+        }
+
+        .instructionInput textarea {
+          @apply font-medium text-primary placeholder:text-primary;
+        }
+      }
+    }
+
+    .buttons {
+      @apply flex gap-x-10;
+
+      .button {
+        @apply w-[180px] py-1.5;
+      }
+
+      .outlined {
+        @apply border-1 border-primary bg-white text-[20px] font-bold leading-[30px] text-primary;
+      }
+
+      .contained {
+        @apply bg-dark text-white;
+      }
+
+      .cancel {
+        @apply border-2;
+      }
+    }
+
+    .closeBtn {
+      @apply absolute right-2.5 top-2 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full shadow-md;
+    }
+  }
+}
+
+.hide {
+  @apply hidden;
+}

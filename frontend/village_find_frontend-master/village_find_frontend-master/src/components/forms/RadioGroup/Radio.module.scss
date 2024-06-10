@@ -1,0 +1,19 @@
+.root {
+  @apply flex cursor-pointer items-center gap-x-2.5;
+
+  .radio {
+    @apply h-2.5 w-2.5 rounded-full bg-white ring-1 ring-secondary ring-offset-2 ring-offset-white;
+  }
+
+  .active {
+    @apply bg-success ring-1 ring-primary ring-offset-2;
+  }
+
+  .small {
+    @apply h-1.5 w-1.5;
+  }
+
+  .secondary.active {
+    @apply bg-dark ring-secondary;
+  }
+}

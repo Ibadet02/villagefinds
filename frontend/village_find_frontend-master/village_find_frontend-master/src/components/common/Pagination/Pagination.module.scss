@@ -1,0 +1,15 @@
+.root {
+    @apply flex gap-x-4;
+    
+    .page {
+        @apply w-10 h-10 flex items-center justify-center rounded-full bg-secondary;
+    }
+
+    .active {
+        @apply bg-dark text-white;
+    }
+
+    .disabled {
+        @apply opacity-30;
+    }
+}

@@ -1,0 +1,25 @@
+.root {
+  h1 {
+    @apply font-bold;
+  }
+
+  > p {
+    @apply my-4;
+  }
+
+  .buttonBar {
+    @apply mt-20 flex flex w-full justify-end gap-x-4;
+
+    button {
+      @apply float-right w-32 rounded-full px-9 py-2;
+    }
+
+    .cancelButton {
+      @apply border border-black bg-white;
+    }
+
+    .addButton {
+      @apply bg-dark text-white;
+    }
+  }
+}

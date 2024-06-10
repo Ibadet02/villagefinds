@@ -1,0 +1,51 @@
+.root {
+  .container {
+    .navItems {
+      @apply mt-6 rounded-full shadow-lg xl:hidden;
+
+      span {
+        @apply pl-4 text-[16px] leading-[18px];
+      }
+    }
+
+    .header {
+      @apply flex justify-between py-10;
+
+      .vendor {
+        @apply flex items-center gap-x-7;
+
+        .image {
+          @apply aspect-square max-w-[120px] overflow-hidden rounded-lg shadow-lg;
+        }
+
+        .text {
+          @apply max-w-[250px] space-y-1;
+
+          .title {
+            @apply text-[20px] font-bold leading-[30px];
+          }
+
+          .body {
+            @apply text-[12px] leading-[18px];
+          }
+        }
+      }
+
+      .links {
+        @apply hidden items-center gap-x-10 xl:flex;
+
+        p {
+          @apply cursor-pointer;
+        }
+
+        .active {
+          @apply font-bold;
+        }
+
+        .joinButton {
+          @apply bg-dark text-[16px] leading-[25px] text-white;
+        }
+      }
+    }
+  }
+}

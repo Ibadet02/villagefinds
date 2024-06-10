@@ -1,0 +1,15 @@
+.root {
+  @apply space-y-10;
+
+  .nav {
+    @apply flex gap-x-6;
+
+    li {
+      @apply cursor-pointer;
+    }
+
+    .active {
+      @apply font-bold;
+    }
+  }
+}

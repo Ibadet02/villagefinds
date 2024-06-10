@@ -1,0 +1,75 @@
+.root {
+  @apply flex gap-x-6;
+
+  .leftBar {
+    @apply flex grow flex-col gap-y-4;
+
+    .blog {
+      @apply bg-gradient-to-r from-[#4A236A] to-[#251235];
+
+      .container {
+        @apply flex w-full items-center gap-x-8 lg:w-2/3;
+
+        .magicPanel {
+          @apply flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-success;
+
+          .magicIcon {
+            @apply h-8 w-8;
+          }
+        }
+
+        .desc {
+          @apply text-xs;
+
+          & * {
+            @apply text-white;
+          }
+
+          h2 {
+            @apply mb-1 text-base font-bold;
+          }
+
+          p {
+            @apply mb-4;
+          }
+
+          span {
+            @apply underline decoration-white;
+          }
+        }
+      }
+    }
+
+    .content {
+      @apply flex flex-col gap-y-4;
+
+      .breadcrumb {
+        @apply flex items-center gap-x-2;
+
+        p {
+          @apply cursor-pointer;
+        }
+
+        .bold {
+          @apply font-bold;
+        }
+      }
+
+      .productName span {
+        @apply font-bold;
+      }
+    }
+  }
+
+  .rightBar {
+    @apply min-w-[250px] shrink-0 self-start rounded-3xl bg-white py-12 pr-12;
+
+    .navItem {
+      @apply cursor-pointer rounded-br-full rounded-tr-full py-3 pl-10 pr-4;
+    }
+
+    .activeItem {
+      @apply bg-primary font-bold;
+    }
+  }
+}

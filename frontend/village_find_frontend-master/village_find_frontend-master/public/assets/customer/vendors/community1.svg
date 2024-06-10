@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="108" viewBox="0 0 109 108">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3129" data-name="Rectangle 3129" width="86.036" height="86.353" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2531" data-name="Group 2531" transform="translate(-106 -4225)">
+    <ellipse id="Ellipse_775" data-name="Ellipse 775" cx="54.5" cy="54" rx="54.5" ry="54" transform="translate(106 4225)" fill="#84a98c"/>
+    <g id="Group_2258" data-name="Group 2258" transform="translate(117.482 4234.823)" clip-path="url(#clip-path)">
+      <path id="Path_1816" data-name="Path 1816" d="M152.695,170.617a17.092,17.092,0,1,1,17.092-17.092,17.111,17.111,0,0,1-17.092,17.092m0-28.448a11.356,11.356,0,1,0,11.356,11.356,11.369,11.369,0,0,0-11.356-11.356" transform="translate(-109.677 -110.348)" fill="#fff"/>
+      <path id="Path_1817" data-name="Path 1817" d="M65.63,20.752a22.7,22.7,0,0,0-45.226,0,22.7,22.7,0,0,0,.029,45.169,22.7,22.7,0,0,0,45.169,0,22.7,22.7,0,0,0,.029-45.169m-.214,39.231a16.73,16.73,0,0,1-6.114-.363,16.776,16.776,0,1,1-32.569,0,16.777,16.777,0,1,1,.088-32.548,16.677,16.677,0,0,1-.579-4.374,16.776,16.776,0,1,1,33.552,0,16.677,16.677,0,0,1-.579,4.374,16.67,16.67,0,0,1,4.124-.514,16.777,16.777,0,0,1,2.078,33.424" fill="#fff"/>
+    </g>
+  </g>
+</svg>

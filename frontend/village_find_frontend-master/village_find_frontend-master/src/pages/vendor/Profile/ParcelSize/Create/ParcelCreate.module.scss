@@ -1,0 +1,25 @@
+.root {
+  .container {
+    @apply space-y-6;
+
+    .horizon {
+      @apply grid grid-cols-1 gap-x-8 gap-y-2 lg:grid-cols-2;
+    }
+
+    .control {
+      @apply space-y-2;
+    }
+  }
+
+  .buttonBar {
+    @apply flex justify-end gap-x-4;
+
+    .button {
+      @apply rounded-full bg-dark px-9 py-3 text-xs text-white;
+    }
+
+    .cancel {
+      @apply border border-primary bg-white text-primary;
+    }
+  }
+}

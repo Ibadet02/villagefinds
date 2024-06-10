@@ -1,0 +1,43 @@
+.root {
+  .container {
+    @apply w-full space-y-4 lg:w-5/6;
+
+    p {
+      @apply text-xs;
+    }
+  }
+
+  .subservice {
+    @apply grid grid-cols-1 gap-x-8 lg:grid-cols-2;
+
+    h3 {
+      @apply font-bold;
+    }
+
+    .ups {
+      @apply space-y-12;
+
+      .subUps {
+        @apply space-y-7;
+      }
+    }
+
+    .fedex {
+      @apply space-y-7;
+    }
+  }
+
+  .radioGroup {
+    @apply flex flex-col text-xs;
+  }
+
+  .buttons {
+    @apply flex justify-end gap-x-4;
+    > button {
+      @apply rounded-full border-1 border-primary px-8 py-2;
+    }
+    > button.updateBtn {
+      @apply bg-dark text-white;
+    }
+  }
+}

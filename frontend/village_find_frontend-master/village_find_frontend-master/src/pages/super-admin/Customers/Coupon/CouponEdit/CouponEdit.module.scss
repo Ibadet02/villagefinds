@@ -1,0 +1,68 @@
+.root {
+  .container {
+    @apply w-full lg:w-2/3;
+  }
+
+  .form {
+    @apply my-6 flex flex-col gap-y-4;
+
+    .control {
+      @apply mb-4;
+
+      & > p {
+        @apply mb-2;
+      }
+    }
+
+    .tiered {
+      @apply flex w-fit flex-col;
+    }
+
+    .tieredButton {
+      @apply flex w-full justify-end;
+      button {
+        @apply rounded-md bg-success p-2 text-white;
+      }
+    }
+
+    .horizon {
+      @apply flex flex-wrap gap-x-4;
+    }
+
+    .nameInput {
+      @apply max-w-[250px];
+    }
+
+    .typeSelector {
+      @apply w-fit;
+    }
+
+    .amountInput {
+      @apply w-fit;
+    }
+
+    .searchInput {
+      @apply mb-4;
+    }
+
+    .dataTable {
+      @apply rounded-sm border border-primary p-4;
+    }
+  }
+
+  .buttonBar {
+    @apply mt-20 flex flex w-full justify-end gap-x-4;
+
+    button {
+      @apply float-right w-32 rounded-full px-9 py-2;
+    }
+
+    .cancelButton {
+      @apply border border-black bg-white;
+    }
+
+    .addButton {
+      @apply bg-dark text-white;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.root {
+  @apply fixed left-0 top-0 z-50 flex h-screen w-screen justify-end bg-black/30 backdrop-blur-sm;
+
+  .cart {
+    @apply flex h-full w-full max-w-[650px] flex-col gap-y-4 bg-lightgray;
+
+    .header {
+      @apply flex shrink-0 justify-between bg-white px-10 py-6 shadow-md;
+
+      .title {
+        @apply flex items-center gap-x-6;
+
+        p {
+          @apply text-[20px] font-bold leading-[30px];
+        }
+
+        span {
+          @apply flex h-10 w-10 items-center justify-center rounded-full bg-warning;
+        }
+      }
+
+      .closeBtn {
+        @apply border-1 border-primary bg-white px-8 py-2 text-[20px] font-medium leading-[27px] text-primary;
+      }
+    }
+
+    .content {
+      @apply grow space-y-6 bg-white px-4 py-10 shadow-md;
+
+      .cartItem {
+        @apply flex items-center justify-between;
+
+        .cartInfo {
+          @apply flex items-center gap-x-2.5;
+
+          img {
+            @apply w-[100px] rounded-[4px];
+          }
+
+          .text {
+            @apply space-y-1;
+
+            .title {
+              @apply text-[16px] font-bold leading-[25px];
+            }
+          }
+        }
+
+        .cartPrice {
+          @apply flex items-center gap-x-5;
+
+          .quantity {
+            @apply flex h-9 w-[120px] shrink-0 items-center rounded-md;
+
+            .minus,
+            .plus {
+              @apply flex aspect-square h-full shrink-0 items-center justify-center rounded-md border-1 border-primary;
+            }
+
+            .minus {
+              @apply rounded-br-none rounded-tr-none bg-secondary;
+            }
+
+            .plus {
+              @apply rounded-bl-none rounded-tl-none bg-success;
+            }
+
+            p {
+              @apply flex h-full grow items-center justify-center border-1 border-primary bg-white text-center;
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      @apply flex shrink-0 items-center justify-between bg-white p-9;
+
+      .text {
+        @apply flex gap-x-10 text-[16px] leading-[25px];
+
+        .price {
+          @apply font-bold;
+        }
+      }
+
+      .checkBtn {
+        @apply bg-dark p-4 text-[20px] font-medium leading-[27px] text-white;
+      }
+    }
+  }
+}
+
+.hide {
+  @apply hidden;
+}

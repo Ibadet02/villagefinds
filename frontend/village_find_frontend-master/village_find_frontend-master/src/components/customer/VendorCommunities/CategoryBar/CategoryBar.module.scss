@@ -1,0 +1,59 @@
+.root {
+    @apply max-w-[200px] hidden xl:flex xl:flex-col xl:gap-y-3;
+
+    .categoryList {
+        @apply shrink-0 gap-y-5 flex flex-col;
+  
+        & > p {
+          @apply text-[20px] font-bold leading-[30px];
+        }
+  
+        .categories {
+          @apply flex flex-col gap-y-2;
+  
+          li {
+            @apply flex cursor-pointer gap-x-2 pl-4;
+  
+            span {
+              @apply h-4 w-4 shrink-0 border-1 border-primary mt-1;
+            }
+  
+            p {
+              @apply text-[16px] leading-[25px];
+            }
+          }
+  
+          .active {
+            @apply rounded-md bg-dark;
+  
+            span {
+              @apply border-secondary;
+            }
+  
+            p {
+              @apply text-white;
+            }
+          }
+        }
+    }
+
+    .priceBar {
+        @apply hidden shrink-0 gap-y-5 lg:flex lg:flex-col;
+  
+        & > p {
+          @apply text-[20px] font-bold leading-[30px];
+        }
+
+        .container {
+            @apply flex gap-x-4;
+
+            .control {
+                @apply space-y-1.5;
+
+                p {
+                    @apply text-[16px] leading-[25px];
+                }
+            }
+        }
+    }
+}

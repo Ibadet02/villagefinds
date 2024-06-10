@@ -1,0 +1,30 @@
+.container {
+  @apply space-y-4;
+
+  .form {
+    @apply flex items-start gap-x-4;
+
+    .control {
+      @apply space-y-2;
+    }
+
+    .values {
+      @apply w-full self-end rounded-full bg-primary;
+      > .valueField {
+        @apply max-h-[40px];
+      }
+    }
+  }
+
+  .buttonBar {
+    @apply flex justify-end gap-x-4 pt-6;
+
+    .button {
+      @apply rounded-full border border-primary px-9 py-3 text-xs;
+    }
+
+    .updateBtn {
+      @apply bg-dark text-white;
+    }
+  }
+}

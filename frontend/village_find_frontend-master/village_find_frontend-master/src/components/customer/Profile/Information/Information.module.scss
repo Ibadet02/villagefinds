@@ -1,0 +1,33 @@
+.root {
+  @apply flex flex-col gap-y-4 rounded-md border-3 border-lightgray px-4 py-5 sm:gap-y-8 sm:px-10;
+
+  > .header {
+    @apply flex flex-col gap-x-4 gap-y-2 sm:flex-row sm:items-center sm:justify-between;
+    > p {
+      @apply text-[24px] font-bold leading-[20px] sm:text-[32px] sm:leading-[43px];
+    }
+    > div.icons {
+      @apply flex items-center gap-x-2 self-end sm:self-center;
+      > .edit {
+        @apply flex items-center gap-x-2;
+      }
+    }
+    svg {
+      @apply shrink-0 text-2xl;
+    }
+  }
+
+  > .controls {
+    @apply flex flex-col gap-y-2.5 sm:gap-y-4;
+
+    > .control {
+      @apply flex gap-x-2.5 sm:gap-x-4;
+      > .input {
+        @apply w-[450px];
+        > input {
+          @apply p-4 focus:border-3 focus:border-danger;
+        }
+      }
+    }
+  }
+}

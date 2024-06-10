@@ -1,0 +1,73 @@
+.root {
+  @apply flex flex-col items-center gap-y-1 rounded-md bg-lightgray px-4 py-3.5;
+
+  .head {
+    @apply text-[16px] font-bold leading-[25px];
+  }
+
+  .navItem {
+    @apply space-y-2;
+
+    p {
+      @apply text-[12px] font-bold leading-[18px];
+    }
+
+    div {
+      @apply h-1 w-full bg-dark;
+    }
+  }
+
+  .card {
+    @apply w-full bg-white px-2.5 pb-10 pt-4;
+
+    .head {
+      @apply mb-4 text-[16px] font-bold leading-[25px];
+    }
+
+    .variant {
+      @apply rounded-full bg-warning px-3.5 py-0.5 text-[11px] leading-[16px];
+    }
+
+    .body {
+      @apply mt-2 max-w-[500px] text-[12px] leading-[18px];
+    }
+  }
+
+  .description {
+    @apply pb-4;
+
+    .body {
+      @apply max-w-none;
+    }
+  }
+
+  .extra {
+    @apply space-y-20 pb-20;
+
+    .secondaryCard {
+      @apply grid grid-cols-1 gap-20 xl:grid-cols-2;
+
+      .specifications {
+        @apply flex flex-col;
+
+        .detItem {
+          @apply flex items-center border-b-1 border-b-secondary py-1;
+
+          * {
+            @apply m-0;
+          }
+
+          .head {
+            @apply mb-0 w-20 p-0 text-[12px] font-bold leading-[18px];
+          }
+        }
+      }
+    }
+
+    .story {
+      .body {
+        @apply max-w-none;
+      }
+    }
+  }
+}

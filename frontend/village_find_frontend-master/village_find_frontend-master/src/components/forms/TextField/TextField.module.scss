@@ -1,0 +1,47 @@
+.root {
+  @apply relative w-full rounded-md border-1 border-primary px-4 py-2.5 text-xs outline-none;
+
+  textarea {
+    @apply w-full bg-transparent placeholder-secondary outline-none;
+  }
+
+  span {
+    @apply absolute top-1/2 -translate-y-1/2 transform;
+  }
+
+  .leftAdorn {
+    @apply left-1.5;
+  }
+
+  .rightAdorn {
+    @apply right-1.5;
+  }
+
+  .circleBar {
+    @apply flex h-7 w-7 items-center justify-center rounded-full bg-info;
+
+    & * {
+      @apply h-4 w-4;
+    }
+  }
+}
+
+.leftAdornment {
+  @apply pl-1.5;
+}
+
+.rightAdornment {
+  @apply pr-1.5;
+}
+
+.roundedFull {
+  @apply rounded-xl;
+}
+
+.borderNone {
+  @apply border-none;
+}
+
+.bgColorSec {
+  @apply bg-primary;
+}

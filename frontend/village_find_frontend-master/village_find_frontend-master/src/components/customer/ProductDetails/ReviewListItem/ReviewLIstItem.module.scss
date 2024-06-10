@@ -1,0 +1,39 @@
+.root {
+  @apply w-full max-w-screen-xs space-y-4;
+
+  .symbol {
+    @apply flex items-center gap-x-4;
+
+    p {
+      @apply text-[10px] leading-[16px];
+    }
+  }
+
+  .profile {
+    @apply flex gap-x-2;
+
+    .avatar {
+      @apply flex aspect-square w-10 shrink-0 items-center justify-center self-start rounded-[4px] bg-warning;
+    }
+
+    .text {
+      @apply space-y-2;
+
+      .title {
+        @apply flex items-center gap-x-2;
+
+        p {
+          @apply text-[16px] font-bold leading-[25px];
+        }
+
+        span {
+          @apply rounded-full bg-info px-1.5 py-0.5 text-[10px] font-bold leading-[16px] text-success;
+        }
+      }
+
+      .body {
+        @apply text-[16px] leading-[25px];
+      }
+    }
+  }
+}

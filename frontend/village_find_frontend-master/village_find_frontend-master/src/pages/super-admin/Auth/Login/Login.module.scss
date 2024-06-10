@@ -1,0 +1,21 @@
+.root {
+  @apply flex h-screen w-screen items-center justify-center;
+  .container {
+    @apply flex w-[400px] flex-col gap-y-2 rounded-md border-1 p-8;
+    > .header {
+      > p {
+        @apply text-[32px] font-bold leading-[48px];
+      }
+    }
+    > .controls {
+      @apply flex flex-col gap-y-2;
+    }
+    > .buttons {
+      @apply flex justify-end;
+
+      > .submitBtn {
+        @apply bg-dark px-4 py-2.5 text-base;
+      }
+    }
+  }
+}

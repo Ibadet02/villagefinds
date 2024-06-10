@@ -1,0 +1,27 @@
+.root {
+  @apply flex justify-center py-20;
+
+  .container {
+    @apply grid w-4/5 grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4;
+
+    .company {
+      @apply flex flex-col gap-y-4;
+
+      .label {
+        @apply relative;
+
+        .main {
+          @apply flex h-40 items-center rounded-md px-4 py-8 text-center text-[13px] leading-[18px] shadow-md;
+        }
+
+        .picker {
+          @apply absolute bottom-0 left-1/2 z-0 h-4 w-4 translate-y-1/2 rotate-45 transform bg-white shadow-md;
+        }
+      }
+
+      img {
+        @apply h-16 self-center;
+      }
+    }
+  }
+}

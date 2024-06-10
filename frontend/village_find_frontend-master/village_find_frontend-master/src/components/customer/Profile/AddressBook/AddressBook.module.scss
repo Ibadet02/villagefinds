@@ -1,0 +1,60 @@
+.root {
+  @apply border-3 border-lightgray;
+  > .addingAddr {
+    @apply flex flex-col gap-y-4 border-1 border-lightgray px-4 py-5 sm:px-10;
+    > p {
+      @apply text-[32px] font-bold leading-[43px];
+    }
+    > .controls {
+      @apply flex flex-col gap-y-2.5 sm:gap-y-6;
+
+      .input {
+        @apply max-w-[450px];
+        > input {
+          @apply p-4;
+        }
+      }
+    }
+    > .addBtn {
+      @apply self-end bg-dark text-sm font-normal text-white sm:self-start sm:text-lg;
+    }
+  }
+  > .addrList {
+    @apply overflow-x-auto rounded-md border-1 border-lightgray px-5 py-5 sm:px-12;
+    > .header {
+      @apply flex gap-x-2.5;
+      > p {
+        @apply shrink-0 text-base font-bold;
+      }
+      & > p:nth-child(1) {
+        @apply basis-40 sm:basis-80;
+      }
+      & > p:nth-child(2) {
+        @apply grow;
+      }
+    }
+    > .body {
+      @apply flex flex-col py-1.5;
+      > .row {
+        @apply flex items-center gap-x-2.5 border-b-1 py-2.5;
+        > p {
+          @apply shrink-0 text-base font-medium;
+        }
+        & > p:nth-child(1) {
+          @apply basis-40 sm:basis-80;
+        }
+        & > p:nth-child(2) {
+          @apply grow;
+        }
+        > .defaultBtn {
+          @apply bg-white p-1 text-base font-medium italic text-primary drop-shadow-md;
+        }
+      }
+      > .row.active {
+        > p {
+          @apply text-success;
+        }
+      }
+    }
+  }
+}

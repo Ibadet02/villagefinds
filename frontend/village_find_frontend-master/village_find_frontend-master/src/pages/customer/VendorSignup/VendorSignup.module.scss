@@ -1,0 +1,293 @@
+.root {
+  @apply flex flex-col items-center px-4 py-16;
+
+  .dashboard {
+    @apply space-y-14;
+
+    .head .title {
+      @apply text-2xl;
+    }
+
+    .roleList {
+      @apply grid grid-cols-2 gap-x-6 gap-y-4 lg:grid-cols-4;
+
+      .role {
+        @apply flex cursor-pointer items-center gap-x-4 rounded-md border-1 border-primary bg-white p-4;
+
+        .radio p {
+          @apply text-primary;
+        }
+
+        .radio span {
+          @apply shrink-0 bg-white ring-1 ring-secondary;
+        }
+      }
+
+      .active {
+        @apply bg-light text-white;
+
+        .radio span {
+          @apply bg-transparent ring-0;
+        }
+
+        .radio p {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  .register {
+    @apply flex w-full max-w-screen-lg flex-col gap-y-8;
+
+    .head {
+      @apply flex flex-col gap-y-10;
+
+      .without {
+        @apply cursor-pointer self-start font-corbel text-[20px] font-bold leading-[24px] text-success underline;
+      }
+
+      .image {
+        @apply relative overflow-hidden rounded-md;
+
+        img {
+          @apply scale-110;
+        }
+
+        .metaInfo {
+          @apply absolute left-8 top-1/2 z-[10] flex -translate-y-1/2 transform items-center gap-x-8;
+
+          .text {
+            @apply flex flex-col gap-y-1;
+
+            p {
+              @apply text-left text-[28px] leading-[42px] text-white;
+            }
+
+            .title {
+              @apply font-bold;
+            }
+          }
+        }
+
+        .grayLayer {
+          @apply absolute left-0 top-0 h-full w-full bg-black/20;
+        }
+      }
+    }
+
+    .communityCode {
+      .verifyBox {
+        @apply space-y-12 px-[120px] py-12;
+
+        .inputBox {
+          @apply space-y-2;
+
+          .form {
+            @apply flex items-center gap-x-6;
+
+            .input input {
+              @apply aspect-square w-[50px] shrink-0 border-1 border-[#BDBDBD] bg-lightgray text-[18px];
+            }
+
+            .submitBtn {
+              @apply font-corbel text-[20px] font-bold leading-[24px];
+            }
+          }
+
+          .codeIssue {
+            @apply text-red-500;
+          }
+        }
+
+        .otherOption {
+          @apply space-y-[18px];
+
+          .text {
+            @apply flex items-center gap-x-4;
+
+            .orText {
+              @apply text-[20px] font-bold leading-[24px] text-success;
+            }
+
+            .description {
+              @apply max-w-[300px] text-[16px] leading-[25px];
+            }
+          }
+
+          .justmeBtn {
+            @apply w-[160px] bg-light px-0 py-[18px] text-center font-corbel text-[20px] leading-[24px];
+          }
+        }
+      }
+    }
+
+    .accountDetail {
+      @apply flex flex-col gap-y-8;
+
+      .details {
+        @apply space-y-10;
+
+        .elements {
+          @apply space-y-6;
+
+          .horizon {
+            @apply grid grid-cols-1 gap-6 xl:grid-cols-2;
+          }
+
+          .input input {
+            @apply border-[#BDBDBD] bg-lightgray p-4;
+          }
+        }
+
+        .bottom {
+          @apply space-y-6;
+
+          .contactInfo {
+            @apply space-y-4;
+
+            p {
+              @apply font-avenir text-[13px] font-medium leading-[15px];
+            }
+
+            .login {
+              @apply cursor-pointer text-success underline;
+            }
+
+            .phone {
+              @apply text-[17px] leading-[15px] text-light;
+            }
+          }
+        }
+      }
+    }
+
+    .subscription {
+      .content {
+        @apply space-y-16 px-24;
+
+        .variants {
+          @apply flex flex-col gap-y-[30px] pt-20;
+
+          .variant {
+            @apply flex items-center gap-x-8;
+
+            .checkbox {
+              @apply aspect-square w-8 shrink-0;
+
+              span {
+                @apply h-4 w-4 shrink-0 ring-2 ring-offset-5;
+              }
+            }
+
+            .text {
+              @apply space-y-2;
+
+              p {
+                @apply font-poppins text-[16px] leading-[25px];
+              }
+
+              .title {
+                @apply font-bold;
+              }
+
+              .transaction {
+                @apply font-corbel text-[20px] font-bold leading-[24px];
+
+                * {
+                  @apply font-corbel font-bold;
+                }
+
+                .origin {
+                  @apply text-red-500 line-through;
+                }
+
+                .current {
+                  @apply text-success;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .billing {
+      .content {
+        @apply space-y-6 px-16 py-5;
+
+        .description {
+          @apply font-avenir text-[13px] font-medium leading-[15px];
+        }
+
+        .stripe {
+          @apply flex items-center gap-x-4;
+
+          .connectBtn {
+            @apply rounded-md px-[26px] py-[18px] font-corbel text-[20px] leading-[24px];
+          }
+
+          img {
+            @apply max-h-[30px];
+          }
+        }
+      }
+    }
+  }
+
+  .head {
+    @apply flex flex-col items-center gap-y-7;
+
+    .title {
+      @apply max-w-[770px] text-center text-[48px] font-bold leading-[72px];
+    }
+
+    .text {
+      @apply max-w-[450px] text-center text-[16px] leading-[25px];
+    }
+  }
+
+  .body {
+    @apply flex flex-col gap-y-16;
+
+    .text {
+      @apply max-w-[720px] space-y-2;
+
+      .title {
+        @apply cursor-pointer text-[20px] font-bold leading-[30px];
+      }
+
+      .description {
+        @apply text-[16px] leading-[25px];
+      }
+    }
+  }
+
+  .nextBtn {
+    @apply w-[160px] self-end rounded-[4px] py-4 font-corbel text-[20px] leading-[24px];
+  }
+}
+
+.primary {
+  @apply bg-primary;
+
+  .body {
+    @apply gap-y-2;
+
+    .section {
+      @apply rounded-md bg-white p-6;
+
+      .title {
+        @apply text-[20px] font-medium leading-[30px];
+      }
+    }
+
+    .active {
+      @apply py-2.5;
+
+      .title {
+        @apply font-corbel font-bold;
+      }
+    }
+  }
+}

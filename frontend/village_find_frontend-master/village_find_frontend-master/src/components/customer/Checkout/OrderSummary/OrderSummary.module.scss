@@ -1,0 +1,63 @@
+.root {
+  @apply flex flex-col gap-y-4;
+
+  .coupon {
+    @apply w-full;
+
+    input {
+      @apply py-4 placeholder:text-[15px] placeholder:font-bold placeholder:leading-[23px] placeholder:text-primary;
+    }
+
+    .applyBtn {
+      @apply mr-8 flex h-[45px] w-[60px] px-2 py-2.5 font-avenir text-[16px] font-normal leading-[22px];
+    }
+  }
+
+  .summary {
+    @apply rounded-md border-2 border-success;
+
+    .head {
+      @apply pb-7 pt-10 text-center text-[20px] font-bold leading-[20px];
+    }
+
+    .body {
+      .row {
+        @apply flex justify-between p-4;
+
+        p {
+          @apply text-[16px] leading-[25px];
+        }
+      }
+
+      .total {
+        @apply bg-primary;
+
+        .text {
+          @apply font-bold;
+        }
+      }
+
+      .pickup {
+        .title {
+          @apply flex flex-col;
+
+          span {
+            @apply text-[13px] leading-[18px] text-light;
+          }
+        }
+      }
+
+      .safePickup {
+        .text {
+          @apply text-[#6ABF15];
+        }
+      }
+
+      .coupon {
+        p {
+          @apply text-[#F22929];
+        }
+      }
+    }
+  }
+}

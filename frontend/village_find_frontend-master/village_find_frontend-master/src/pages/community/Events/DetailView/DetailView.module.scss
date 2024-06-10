@@ -1,0 +1,19 @@
+.root {
+  @apply flex flex-col gap-y-6;
+
+  .detail {
+    @apply flex flex-col gap-y-8;
+
+    .header {
+      @apply flex gap-x-4;
+
+      p {
+        @apply cursor-pointer text-[16px] leading-[25px];
+      }
+
+      .active {
+        @apply font-bold;
+      }
+    }
+  }
+}

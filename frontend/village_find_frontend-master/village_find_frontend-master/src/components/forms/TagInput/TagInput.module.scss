@@ -1,0 +1,33 @@
+.root {
+  @apply w-full overflow-x-auto overflow-y-hidden;
+
+  .tags {
+    @apply relative flex h-10 w-fit min-w-full items-center gap-x-2 rounded-full bg-primary px-4 py-1.5 text-xs;
+
+    > p {
+      @apply flex shrink-0 items-center gap-x-1 rounded-full bg-dark px-4 py-0.5 text-xs text-white;
+      > span > svg {
+        @apply cursor-pointer;
+      }
+    }
+
+    > input {
+      @apply grow border-none bg-primary py-0.5 outline-none;
+    }
+
+    > span.placeholder {
+      @apply absolute left-4 -z-[50];
+    }
+  }
+}
+
+.fullRound > .tags {
+  @apply rounded-full;
+}
+
+.smallRound > .tags {
+  @apply rounded-md border-1 border-primary bg-white;
+  > input {
+    @apply bg-white;
+  }
+}

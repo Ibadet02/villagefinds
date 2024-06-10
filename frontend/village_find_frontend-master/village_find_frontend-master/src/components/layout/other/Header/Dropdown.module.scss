@@ -1,0 +1,21 @@
+.root {
+  @apply relative w-40;
+
+  .dropdown {
+    @apply mb-1.5 flex cursor-pointer items-center justify-between rounded-full bg-white p-4;
+
+    .arrow,
+    p {
+      @apply cursor-pointer text-xs;
+    }
+  }
+
+  .dropbox {
+    @apply absolute flex w-full flex-col gap-y-4 py-4;
+
+    span,
+    a {
+      @apply cursor-pointer text-center text-xs;
+    }
+  }
+}

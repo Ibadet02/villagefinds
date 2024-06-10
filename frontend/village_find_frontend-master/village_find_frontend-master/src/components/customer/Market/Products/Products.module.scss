@@ -1,0 +1,23 @@
+.root {
+  @apply py-10;
+
+  .toolbar {
+    @apply flex flex-wrap items-center justify-between gap-4 py-10;
+
+    .filters {
+      @apply flex flex-wrap items-center gap-6;
+
+      .price {
+        @apply flex items-center gap-x-2;
+      }
+    }
+
+    .zipcode {
+      @apply flex items-center gap-x-3.5;
+    }
+  }
+
+  .products {
+    @apply flex flex-wrap gap-x-2;
+  }
+}

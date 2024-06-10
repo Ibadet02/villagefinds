@@ -1,0 +1,33 @@
+.root {
+  .container {
+    @apply w-full py-20 sm:max-w-[400px];
+
+    h1 {
+      @apply mb-2 text-center text-3xl font-bold;
+    }
+
+    .subtitle {
+      @apply mb-8 text-center text-xl;
+    }
+
+    .form {
+      @apply space-y-4;
+
+      .terms {
+        @apply mb-4 h-60 rounded-md border border-primary p-4 text-center;
+
+        h2 {
+          @apply text-xl font-bold;
+        }
+      }
+
+      .agreeRadio {
+        @apply mb-10;
+      }
+
+      .signupBtn {
+        @apply w-full text-base font-normal;
+      }
+    }
+  }
+}

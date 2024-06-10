@@ -1,0 +1,25 @@
+.root {
+  .container {
+    @apply flex flex-row-reverse;
+
+    .panel {
+      @apply space-y-12 pr-20;
+
+      .logo {
+        @apply flex flex-col gap-y-4;
+
+        span {
+          @apply self-start rounded-md bg-success px-2 py-0.5 text-sm font-medium text-white;
+        }
+
+        p {
+          @apply mt-12 text-4xl font-bold;
+        }
+      }
+
+      button {
+        @apply rounded-full bg-dark px-16 py-3 text-xs text-white disabled:opacity-30;
+      }
+    }
+  }
+}

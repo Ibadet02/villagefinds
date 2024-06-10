@@ -1,0 +1,36 @@
+.root {
+  @apply bg-light;
+
+  .container {
+    @apply grid grid-cols-1 gap-y-10 py-12 sm:grid-cols-2 lg:grid-cols-5;
+
+    .section {
+      @apply flex w-full flex-col gap-y-4;
+
+      h4 {
+        @apply mb-6 text-xl font-bold text-success;
+      }
+
+      a,
+      p {
+        @apply text-white;
+      }
+
+      .socials {
+        @apply flex gap-x-2;
+
+        a {
+          @apply flex h-10 w-10 items-center justify-center rounded-full bg-white;
+
+          svg {
+            @apply h-6 w-6;
+          }
+        }
+      }
+    }
+
+    .about {
+      @apply lg:col-span-2;
+    }
+  }
+}

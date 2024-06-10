@@ -1,0 +1,78 @@
+.container {
+  @apply space-y-4;
+
+  .variant {
+    p {
+      @apply mb-8;
+
+      span {
+        @apply font-bold;
+      }
+    }
+  }
+
+  .form {
+    @apply space-y-4;
+  }
+
+  .valueBar {
+    @apply flex flex-wrap gap-x-4 gap-y-2;
+
+    > .valueChip {
+      @apply flex min-w-[150px] items-center justify-between rounded-full border-none bg-primary px-4 py-2;
+      > span {
+        > svg {
+          @apply cursor-pointer;
+        }
+      }
+    }
+
+    > .addButton {
+      @apply flex min-w-[100px] items-center justify-between rounded-full bg-primary px-4 py-2 font-semibold shadow-xl;
+    }
+
+    > .valueInput > input {
+      @apply max-w-[150px] py-2;
+    }
+  }
+
+  .addAttr {
+    @apply flex flex-col gap-y-8;
+
+    .button {
+      @apply self-end rounded-full bg-dark px-4 py-2 text-white;
+    }
+  }
+
+  .buttonBar {
+    @apply flex justify-end;
+
+    .button {
+      @apply rounded-full bg-dark px-12 py-2 text-white;
+    }
+  }
+
+  .attribute {
+    @apply flex flex-col gap-y-4;
+  }
+
+  .control {
+    @apply flex flex-col gap-y-2.5;
+
+    p {
+      @apply font-medium;
+    }
+
+    > .heading {
+      @apply flex items-center justify-between;
+
+      > span {
+        @apply flex aspect-square w-10 cursor-pointer items-center justify-center rounded-full border border-primary bg-warning;
+      }
+    }
+
+    input {
+      @apply text-base;
+    }
+  }
+}

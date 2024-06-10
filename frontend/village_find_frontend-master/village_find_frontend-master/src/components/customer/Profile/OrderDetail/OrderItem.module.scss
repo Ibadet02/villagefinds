@@ -1,0 +1,45 @@
+.root {
+  @apply flex items-center gap-x-2;
+
+  > div {
+    @apply shrink-0;
+    p {
+      @apply text-xs font-medium;
+    }
+  }
+
+  > div:nth-child(1) {
+    @apply flex basis-32 items-center gap-x-2.5 md:basis-64;
+    > img {
+      @apply aspect-square w-10;
+    }
+    > .info {
+      @apply flex flex-col gap-y-1.5;
+      > .title {
+        @apply font-bold;
+      }
+      > .orderID {
+        > span {
+          @apply text-light;
+        }
+      }
+    }
+  }
+  > div:nth-child(2),
+  > div:nth-child(3) {
+    @apply flex flex-col gap-y-1.5;
+    > .title {
+      @apply font-bold;
+    }
+  }
+  > div:nth-child(2) {
+    @apply basis-24 md:basis-32;
+  }
+  > div:nth-child(3) {
+    @apply grow;
+  }
+
+  > .detailBtn {
+    @apply bg-dark px-2.5 py-4 text-sm font-medium md:text-base;
+  }
+}

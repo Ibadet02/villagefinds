@@ -1,0 +1,60 @@
+.root {
+  @apply space-y-16 py-16;
+
+  .head {
+    @apply max-w-[550px] space-y-4;
+
+    .title {
+      @apply text-[28px] font-bold leading-[32px];
+    }
+
+    .text {
+      @apply text-[16px] leading-[25px];
+    }
+
+    .orderBtn {
+      @apply w-[280px] rounded-md py-4 text-[20px] leading-[27px];
+    }
+  }
+
+  .body {
+    @apply w-full space-y-8 bg-primary p-7;
+
+    .title {
+      @apply text-[28px] font-bold leading-[32px];
+    }
+
+    .rate,
+    .improve {
+      @apply space-y-3;
+
+      .text {
+        @apply text-[20px] font-medium leading-[30px];
+      }
+    }
+
+    .message {
+      @apply border-none bg-white;
+    }
+
+    .submitBtn {
+      @apply w-[280px] rounded-md py-4 text-[20px] leading-[27px];
+    }
+  }
+
+  .footer {
+    @apply space-y-10;
+
+    .title {
+      @apply text-[20px] font-bold leading-[30px];
+    }
+
+    .icons {
+      @apply flex gap-x-6;
+
+      span {
+        @apply flex aspect-square w-16 items-center justify-center rounded-full bg-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.root {
+  @apply flex flex-col gap-y-4;
+
+  .information {
+    .container {
+      @apply space-y-4;
+
+      .thumbnail {
+        @apply flex items-center gap-x-2;
+
+        .arrow {
+          @apply h-3 w-3;
+        }
+
+        span {
+          @apply font-bold;
+        }
+      }
+
+      .variant {
+        p {
+          @apply mb-8;
+          span {
+            @apply font-bold;
+          }
+        }
+
+        .paytype {
+          .radioPanel {
+            @apply min-w-[200px] cursor-pointer rounded-full border-1 border-primary px-4 py-2;
+
+            .radio {
+              @apply flex items-center gap-x-2;
+
+              * {
+                @apply m-0;
+              }
+            }
+          }
+
+          .active {
+            @apply bg-success;
+
+            span {
+              @apply text-white;
+            }
+
+            p {
+              @apply text-white;
+            }
+          }
+        }
+      }
+
+      .form {
+        @apply space-y-4;
+
+        .control {
+          @apply space-y-2;
+
+          p {
+            @apply font-medium;
+          }
+
+          .categories {
+            & > div {
+              @apply border-none bg-primary;
+            }
+            & > div:nth-child(1) {
+              @apply rounded-full;
+            }
+            & > div:nth-child(2) {
+              @apply rounded-3xl;
+            }
+          }
+
+          .input span {
+            @apply cursor-pointer bg-success;
+          }
+
+          .textInput span {
+            @apply bg-success;
+          }
+        }
+      }
+
+      .buttonBar {
+        @apply flex justify-end gap-x-4;
+
+        .button {
+          @apply w-[120px] rounded-full border border-primary bg-white px-9 py-3 text-xs;
+        }
+
+        .updateButton {
+          @apply border-none bg-dark text-white;
+        }
+      }
+    }
+  }
+}
+
+.adornment {
+  @apply flex h-8 w-8 items-center justify-center rounded-full bg-success;
+}

@@ -1,0 +1,76 @@
+.root {
+  @apply space-y-10;
+
+  .survey {
+    @apply grid grid-cols-1 gap-4 lg:grid-cols-3;
+
+    .board {
+      @apply grid grid-rows-3 gap-4;
+
+      .card {
+        @apply flex content-center justify-between;
+
+        & > div {
+          @apply space-y-2;
+
+          h3 {
+            @apply font-bold;
+          }
+          p {
+            @apply text-xs;
+          }
+        }
+
+        span {
+          @apply flex min-w-[150px] items-center justify-center rounded-full text-2xl font-bold text-success;
+        }
+
+        .sales {
+          @apply bg-info;
+        }
+
+        .trans {
+          @apply bg-primary;
+        }
+
+        .avg {
+          @apply bg-secondary;
+        }
+      }
+    }
+
+    .revenue {
+      @apply col-span-2 space-y-4;
+
+      .header {
+        @apply flex justify-between;
+      }
+
+      .duration {
+        @apply w-fit min-w-0;
+      }
+
+      p {
+        span {
+          @apply font-bold;
+        }
+      }
+    }
+  }
+
+  .currentOrder {
+    @apply flex flex-col gap-y-4;
+    .toolbar {
+      @apply flex gap-x-6;
+      > .control {
+        @apply flex flex-col gap-y-1;
+        > p {
+          @apply font-medium;
+        }
+        > .input {
+          @apply min-w-[250px];
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.root {
+  @apply rounded-3xl bg-white p-8 shadow-lg;
+
+  h1 {
+    @apply mb-4 font-bold;
+  }
+}

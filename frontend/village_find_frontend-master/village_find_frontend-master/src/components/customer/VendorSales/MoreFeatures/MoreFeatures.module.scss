@@ -1,0 +1,27 @@
+.root {
+  @apply space-y-12 md:space-y-20;
+
+  & > h1 {
+    @apply text-center text-[20px] font-bold leading-[30px] md:text-[48px] md:leading-[72px];
+  }
+
+  .container {
+    @apply grid grid-cols-1 gap-6 md:grid-cols-2;
+
+    .featureColumn {
+      @apply flex flex-col gap-4;
+
+      .feature {
+        @apply space-y-2;
+
+        .head {
+          @apply text-[16px] font-bold leading-[25px] md:text-[20px] md:leading-[30px];
+        }
+
+        .body {
+          @apply text-[14px] leading-[20px] md:text-[16px] md:leading-[25px];
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.root {
+  @apply fixed top-40 z-[1000] hidden max-h-[500px] w-[300px] flex-col gap-y-2.5 overflow-y-auto rounded-b-md bg-white py-6 shadow-md md:flex;
+
+  .categorybar {
+    @apply px-6;
+
+    .head {
+      @apply mb-2 text-[20px] font-semibold leading-[30px];
+    }
+  }
+
+  .categories {
+    @apply flex w-full flex-col overflow-y-auto px-6;
+
+    li {
+      @apply border-b-1 border-b-success py-1.5 text-[16px] leading-[25px];
+
+      span {
+        @apply cursor-pointer px-2 py-0.5 hover:rounded-full hover:bg-dark hover:font-bold hover:text-white;
+      }
+    }
+
+    .active {
+      @apply rounded-full bg-dark font-bold;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.root {
+  @apply flex w-full flex-col gap-y-6;
+
+  h1 {
+    @apply text-[32px] font-bold leading-[36px] text-dark;
+  }
+
+  .form {
+    @apply flex flex-col gap-y-8;
+
+    .control {
+      @apply space-y-2;
+
+      .input {
+        @apply w-full;
+      }
+
+      .upload input {
+        @apply rounded-full border-none bg-primary;
+      }
+    }
+
+    button {
+      @apply self-end rounded-full bg-dark px-8 py-2 text-white;
+    }
+  }
+}

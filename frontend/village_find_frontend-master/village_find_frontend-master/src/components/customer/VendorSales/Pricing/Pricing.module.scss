@@ -1,0 +1,60 @@
+.root {
+  @apply space-y-10 py-10 xl:space-y-16 xl:py-16;
+
+  h1 {
+    @apply text-[30px] font-bold leading-[48px] xl:text-[48px] xl:leading-[72px];
+  }
+
+  .packages {
+    @apply grid grid-cols-1 place-items-center xl:grid-cols-3;
+
+    .pkgWrapper {
+      @apply flex h-full w-full max-w-screen-xs flex-col space-y-10 p-10 shadow-lg xl:max-w-full xl:rounded-lg;
+
+      h3 {
+        @apply text-[48px] font-bold leading-[72px];
+      }
+
+      .package {
+        @apply flex grow flex-col justify-between gap-y-10;
+
+        .content {
+          @apply space-y-6;
+
+          p {
+            @apply text-[20px] leading-[30px];
+          }
+
+          .emphasis {
+            @apply font-bold text-success;
+          }
+        }
+
+        .button {
+          @apply self-start;
+
+          .text {
+            @apply mr-2 font-bold text-white;
+          }
+        }
+      }
+    }
+
+    .active {
+      @apply scale-105 bg-light;
+
+      h3 {
+        @apply text-success;
+      }
+
+      .package {
+        .content {
+          p,
+          .emphasis {
+            @apply text-white;
+          }
+        }
+      }
+    }
+  }
+}

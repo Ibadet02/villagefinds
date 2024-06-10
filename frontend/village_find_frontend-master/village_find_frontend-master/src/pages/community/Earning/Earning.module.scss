@@ -1,0 +1,27 @@
+.root {
+  @apply flex w-full flex-col gap-y-6;
+
+  h1 {
+    @apply text-[32px] font-bold leading-[36px] text-dark;
+  }
+
+  .content {
+    @apply flex gap-x-6;
+
+    .input {
+      @apply w-full max-w-[250px];
+    }
+
+    .buttons {
+      @apply flex w-full gap-x-2;
+
+      button {
+        @apply w-full max-w-[120px] rounded-full border-1 border-primary py-2 text-primary;
+      }
+
+      .submit {
+        @apply border-none bg-dark text-white;
+      }
+    }
+  }
+}

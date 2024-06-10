@@ -1,0 +1,40 @@
+.root {
+  @apply flex w-full flex-col gap-y-6;
+
+  h1 {
+    @apply text-[32px] font-bold leading-[36px] text-dark;
+  }
+
+  .content {
+    .header {
+      @apply mb-6 flex items-center justify-between;
+
+      .input {
+        @apply max-w-[450px] shrink-0 grow;
+      }
+
+      .actions {
+        @apply flex gap-x-6;
+
+        .newButton {
+          @apply rounded-full px-5 py-2 text-[16px] font-medium leading-[25px];
+        }
+      }
+    }
+
+    .body {
+    }
+  }
+}
+
+.viewButton {
+  @apply rounded-full bg-dark px-6 py-0.5 text-[16px] text-base font-medium leading-[25px];
+}
+
+.eventCell {
+  @apply text-[13px] leading-[18px];
+}
+
+.statusSelector {
+  @apply min-w-0;
+}

@@ -1,0 +1,11 @@
+.root {
+  @apply space-y-10;
+
+  & > p {
+    @apply text-[20px] font-bold leading-[30px];
+  }
+
+  .categories {
+    @apply flex flex-wrap gap-x-2;
+  }
+}

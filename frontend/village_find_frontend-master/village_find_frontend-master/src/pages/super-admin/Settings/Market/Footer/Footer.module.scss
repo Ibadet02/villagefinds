@@ -1,0 +1,41 @@
+.root {
+  @apply flex flex-col gap-y-4;
+
+  .section {
+    .wrapper {
+      @apply w-full lg:w-2/3;
+
+      h2 {
+        @apply mb-6 mt-12 font-bold;
+      }
+
+      .control {
+        @apply mb-6;
+
+        p {
+          @apply mb-4;
+        }
+
+        .input {
+          @apply w-full;
+        }
+      }
+    }
+
+    .buttonBar {
+      @apply mt-20 flex flex w-full justify-end gap-x-4;
+
+      button {
+        @apply float-right w-32 rounded-full px-9 py-2;
+      }
+
+      .cancelButton {
+        @apply border border-black bg-white;
+      }
+
+      .addButton {
+        @apply bg-dark text-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.container {
+  @apply space-y-4;
+
+  .thumbnail {
+    @apply flex items-center gap-x-2;
+
+    .arrow {
+      @apply h-3 w-3;
+    }
+
+    span {
+      @apply font-bold;
+    }
+  }
+
+  h1 {
+    span {
+      @apply font-bold;
+    }
+  }
+
+  .form {
+    @apply space-y-4 pt-4;
+
+    .control {
+      @apply space-y-2;
+
+      .button {
+        @apply rounded-full border-1 border-black bg-white px-5 py-2 text-white;
+
+        .radio span {
+          @apply bg-white ring-secondary;
+        }
+      }
+
+      .buttonChecked {
+        @apply bg-success;
+
+        .radio {
+          p {
+            @apply text-white;
+          }
+
+          span {
+            @apply bg-success;
+          }
+        }
+      }
+    }
+  }
+
+  .feeInput {
+    @apply w-fit min-w-0 text-base;
+  }
+
+  .buttonBar {
+    @apply flex justify-end gap-x-4;
+
+    button {
+      @apply rounded-full border border-primary bg-white px-8 py-3 text-xs;
+    }
+
+    .updateBtn {
+      @apply bg-dark text-white;
+    }
+  }
+}

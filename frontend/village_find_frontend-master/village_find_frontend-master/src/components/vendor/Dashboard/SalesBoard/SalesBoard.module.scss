@@ -1,0 +1,31 @@
+.root {
+  @apply bg-success text-white;
+
+  & * {
+    @apply text-white;
+  }
+
+  .rows {
+    @apply flex flex-col gap-y-4;
+  }
+
+  .row {
+    @apply flex justify-between;
+
+    p {
+      @apply text-white;
+    }
+
+    .price {
+      @apply font-bold;
+    }
+  }
+
+  .totalRow {
+    @apply px-4 text-3xl font-bold;
+  }
+
+  .divider {
+    @apply border-t border-t-white;
+  }
+}

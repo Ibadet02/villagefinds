@@ -1,0 +1,25 @@
+.root {
+  @apply space-y-14;
+
+  .shippingMode {
+    @apply space-y-3;
+
+    .title {
+      @apply text-[20px] font-bold leading-[20px];
+    }
+
+    .selector {
+      & > div:nth-child(1) {
+        @apply border-1 border-primary;
+      }
+
+      & > div {
+        @apply font-medium;
+      }
+    }
+  }
+
+  .nextBtn {
+    @apply w-full rounded-md py-4 text-[20px] uppercase leading-[27px];
+  }
+}

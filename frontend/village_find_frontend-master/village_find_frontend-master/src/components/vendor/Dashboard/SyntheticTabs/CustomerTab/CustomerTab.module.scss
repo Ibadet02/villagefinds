@@ -1,0 +1,9 @@
+.root {
+  @apply mb-6 mt-10;
+
+  p {
+    span {
+      @apply font-bold;
+    }
+  }
+}

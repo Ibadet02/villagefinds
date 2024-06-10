@@ -1,0 +1,43 @@
+.root {
+  @apply min-h-full w-[250px] max-w-none shrink-0 rounded-tr-[40px] bg-white pl-2 pt-4 sm:max-w-[250px] xl:w-[300px] xl:max-w-[300px];
+}
+
+.brand {
+  @apply my-9 flex flex-col items-center gap-y-4;
+
+  p {
+    @apply text-sm;
+  }
+}
+
+.navbar {
+  @apply flex flex-col gap-y-1;
+}
+
+.navItem {
+  @apply flex cursor-pointer flex-col;
+
+  .parentItem {
+    @apply flex gap-x-3 px-2.5 py-2;
+  }
+
+  .activeParentItem {
+    @apply rounded-bl-full rounded-tl-full bg-primary font-bold;
+  }
+
+  .childPanel {
+    @apply flex flex-col gap-y-1 px-4 py-2;
+
+    .leafItem {
+      @apply mx-1 my-1 cursor-pointer text-xs;
+    }
+
+    .activeLeafItem {
+      @apply font-bold;
+    }
+
+    .subParentItem {
+      @apply mx-4 text-base;
+    }
+  }
+}

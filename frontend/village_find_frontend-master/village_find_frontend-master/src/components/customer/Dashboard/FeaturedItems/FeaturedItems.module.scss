@@ -1,0 +1,23 @@
+.root {
+  @apply py-10 sm:pb-20 sm:pt-16;
+
+  .container {
+    @apply space-y-6;
+
+    & > h1 {
+      @apply text-base font-bold xl:text-xl;
+    }
+
+    .featuredItems {
+      @apply flex flex-nowrap gap-x-2 overflow-x-auto overflow-y-hidden sm:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:overflow-visible;
+
+      .featuredItem {
+        @apply min-w-[200px] shrink-0;
+      }
+    }
+
+    .moreItems {
+      @apply grid grid-cols-1 gap-2 xs:grid-cols-2;
+    }
+  }
+}

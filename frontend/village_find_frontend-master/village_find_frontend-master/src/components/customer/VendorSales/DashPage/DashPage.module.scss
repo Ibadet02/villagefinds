@@ -1,0 +1,19 @@
+.root {
+  @apply aspect-[3/1] w-full bg-[url('/assets/customer/backs/salesback.png')] bg-cover bg-no-repeat;
+
+  .container {
+    @apply flex h-full w-full flex-col justify-center gap-y-4 md:gap-y-10;
+
+    & > p {
+      @apply w-full max-w-[200px] self-center text-center text-xl font-bold text-secondary md:max-w-[400px] md:self-start md:text-left md:text-5xl md:leading-[72px];
+    }
+
+    .button {
+      @apply flex gap-x-2 self-center py-2 md:self-start md:py-4;
+
+      p {
+        @apply text-sm text-white md:text-xl;
+      }
+    }
+  }
+}

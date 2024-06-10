@@ -1,0 +1,111 @@
+.root {
+  @apply w-full pt-20;
+
+  .container {
+    @apply flex flex-col items-center text-center;
+
+    .wrapper {
+      @apply mb-20 flex w-full flex-col items-center;
+
+      & > h1 {
+        @apply mb-6 text-2xl font-bold xl:text-5xl;
+      }
+
+      & > p {
+        @apply mb-20 max-w-[600px] xl:px-10;
+      }
+
+      .ccommerce {
+        @apply max-w-[800px] rounded-md border border-light p-4 text-left;
+
+        h2 {
+          @apply font-bold;
+        }
+      }
+    }
+
+    .comwrapper {
+      @apply grid grid-cols-1 gap-6 xl:grid-cols-2;
+
+      .comText {
+        @apply col-start-1 xl:row-start-1;
+
+        & > h4 {
+          @apply mb-8 hidden text-left text-[20px] font-bold leading-[30px] sm:flex;
+        }
+
+        .communities {
+          @apply mb-16 flex flex-col gap-y-8;
+
+          .community {
+            @apply flex flex-col gap-x-10 gap-y-8 sm:flex-row xl:text-left;
+
+            .avatar {
+              @apply w-auto self-center;
+            }
+
+            .content {
+              @apply space-y-2;
+
+              .header {
+                @apply font-bold;
+              }
+            }
+          }
+        }
+      }
+
+      & > img {
+        @apply row-start-1 self-center xl:col-start-2;
+      }
+    }
+
+    .expect {
+      @apply py-10;
+
+      & > p {
+        @apply mb-10 text-[20px] font-bold leading-[30px] lg:mb-16;
+      }
+
+      .solutions {
+        @apply grid grid-cols-1 gap-10 lg:grid-cols-2;
+
+        .solution {
+          @apply flex flex-col justify-center gap-4 lg:flex-row lg:items-center;
+
+          img {
+            @apply self-center;
+          }
+
+          .text {
+            @apply space-y-2 text-center text-sm md:text-base lg:text-left;
+
+            .head {
+              @apply font-bold;
+            }
+          }
+        }
+      }
+    }
+
+    .looklike {
+      @apply space-y-8 py-10 text-[20px] font-bold leading-[30px] md:space-y-12 xl:space-y-20;
+    }
+
+    .statements {
+      @apply w-full space-y-7 py-10 lg:w-[80%];
+
+      .statement {
+        @apply flex items-center gap-x-7;
+
+        .text {
+          @apply flex flex-col items-start text-left text-sm text-dark lg:text-base;
+
+          .head {
+            @apply text-[16px] font-bold leading-[20px];
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.root {
+  @apply fixed left-0 top-0 h-screen w-screen bg-black/20 px-20 py-10;
+
+  .panel {
+    @apply relative flex h-full w-full flex-col overflow-y-auto rounded-2xl bg-white px-[130px] py-16;
+
+    .actions {
+      @apply mb-4 flex justify-end gap-x-6;
+
+      button {
+        @apply flex w-24 items-center justify-between rounded-full bg-primary px-2 py-1.5;
+
+        p {
+          @apply text-[13px] font-medium leading-[18px];
+        }
+
+        span {
+          @apply flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-info;
+
+          img {
+            @apply h-4 w-4;
+          }
+        }
+      }
+    }
+
+    .content {
+      @apply space-y-[56px] overflow-y-auto;
+
+      .header {
+        @apply rounded-2xl bg-primary px-16 py-5;
+
+        h1 {
+          @apply mb-[30px] text-[24px] font-bold leading-[35px];
+        }
+
+        .text {
+          @apply space-y-2.5;
+
+          p {
+            @apply text-[16px] leading-[25px];
+
+            span {
+              @apply font-bold;
+            }
+          }
+        }
+      }
+
+      .form {
+        @apply flex flex-col gap-y-6 px-16;
+
+        .control {
+          @apply space-y-3.5;
+
+          .label {
+            @apply ml-6 text-[16px] font-bold leading-[25px];
+          }
+
+          .horizon {
+            @apply flex gap-x-2;
+
+            .gridIcon {
+              @apply grid grid-cols-2 gap-0.5 self-center;
+
+              span {
+                @apply h-1.5 w-1.5 rounded-full border-1 border-primary;
+              }
+            }
+
+            .input {
+              @apply grow rounded-full bg-primary px-4 py-3 text-[13px] leading-[18px];
+            }
+          }
+        }
+      }
+    }
+
+    .closeButton {
+      @apply absolute right-4 top-4 flex h-6 w-6 cursor-pointer select-none items-center justify-center rounded-full bg-info pt-0.5 text-[24px] font-normal text-success;
+    }
+  }
+}

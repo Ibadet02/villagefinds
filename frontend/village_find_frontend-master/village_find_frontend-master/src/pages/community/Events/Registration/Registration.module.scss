@@ -1,0 +1,27 @@
+.root {
+  @apply flex flex-col gap-y-10;
+
+  .text {
+    @apply flex flex-col gap-y-1;
+
+    h2 {
+      @apply text-[16px] font-medium leading-[25px];
+    }
+
+    p {
+      @apply text-[13px] leading-[18px];
+    }
+  }
+
+  .control {
+    @apply flex items-center gap-x-4 xl:w-3/4;
+
+    .input {
+      @apply grow;
+    }
+
+    .updateButton {
+      @apply rounded-full bg-dark px-9 py-3 text-[13px] font-medium leading-[18px] text-white;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.root {
+  @apply flex w-full flex-col gap-y-6;
+
+  h1 {
+    @apply text-[32px] font-bold leading-[36px] text-dark;
+  }
+
+  .card {
+    @apply flex flex-col gap-y-1;
+
+    .control {
+      @apply space-y-2;
+    }
+
+    button {
+      @apply self-end rounded-full bg-dark px-8 py-2 text-[16px] leading-[25px] text-white;
+    }
+  }
+}

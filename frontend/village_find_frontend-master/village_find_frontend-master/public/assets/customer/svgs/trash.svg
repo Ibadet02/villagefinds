@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24">
+  <g id="Group_2531" data-name="Group 2531" transform="translate(-891.5 -33.5)">
+    <path id="path" d="M575,657v10.994A4.005,4.005,0,0,1,570.994,672h-6.988A4.005,4.005,0,0,1,560,667.994V657" transform="translate(334 -615)" fill="none" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="path-2" data-name="path" d="M563.844,651.208A2.208,2.208,0,0,1,566.052,649h.71a2.209,2.209,0,0,1,2.208,2.208" transform="translate(335 -615)" fill="none" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="line" d="M0,0H19" transform="translate(892 39)" fill="none" stroke="#616161" stroke-linecap="round" stroke-width="1"/>
+    <line id="line-2" data-name="line" y2="8" transform="translate(899 44)" fill="none" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="line-3" data-name="line" y2="8" transform="translate(904 44)" fill="none" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

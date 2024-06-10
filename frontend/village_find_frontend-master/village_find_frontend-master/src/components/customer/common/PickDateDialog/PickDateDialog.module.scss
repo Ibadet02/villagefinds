@@ -1,0 +1,23 @@
+.root {
+  @apply fixed left-0 top-0 z-[50] flex h-screen w-screen items-center justify-center bg-black/30;
+
+  .container {
+    @apply relative flex max-w-screen-sm flex-col gap-y-10 rounded-lg bg-white px-20 py-10 shadow-lg;
+
+    .title {
+      @apply text-[20px] font-bold leading-[30px];
+    }
+
+    .updateBtn {
+      @apply w-full py-4 text-[13px] font-medium leading-[18px];
+    }
+
+    .closeBtn {
+      @apply absolute right-2.5 top-2 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full shadow-md;
+    }
+  }
+}
+
+.hide {
+  @apply hidden;
+}

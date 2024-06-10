@@ -1,0 +1,49 @@
+.root {
+  .tableToolbar {
+    @apply my-8 text-base;
+
+    .actions {
+      @apply flex gap-x-2;
+
+      p {
+        @apply mb-2 text-white;
+      }
+
+      .button {
+        @apply rounded-full px-6 py-3 text-xs;
+      }
+
+      .submit {
+        @apply bg-success text-white;
+      }
+
+      .reset {
+        @apply border border-primary bg-white text-primary;
+      }
+    }
+  }
+
+  .tableBody {
+    @apply z-0 overflow-x-auto text-xs;
+  }
+
+  .statusSelector {
+    @apply w-fit min-w-0 text-base;
+  }
+
+  .actionCell {
+    @apply flex items-center gap-x-6;
+
+    .actionButton {
+      @apply self-center rounded-full bg-dark px-6 py-2 text-base text-white;
+    }
+  }
+}
+
+.cell {
+  @apply text-xs;
+}
+
+.subscription {
+  @apply flex flex-col;
+}

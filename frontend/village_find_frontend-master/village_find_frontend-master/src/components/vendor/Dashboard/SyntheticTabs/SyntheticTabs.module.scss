@@ -1,0 +1,19 @@
+.root {
+  @apply relative col-span-1 lg:col-span-2;
+
+  .nav {
+    @apply absolute flex gap-4;
+
+    li {
+      @apply cursor-pointer;
+    }
+
+    .active {
+      @apply font-bold;
+    }
+  }
+}
+
+.popularItems {
+  @apply mt-10;
+}

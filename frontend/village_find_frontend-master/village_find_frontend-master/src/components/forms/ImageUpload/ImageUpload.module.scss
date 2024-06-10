@@ -1,0 +1,23 @@
+.root {
+  @apply h-max;
+
+  >p {
+    @apply mb-4;
+  }
+
+  .body {
+    @apply mb-4;
+
+    .imgSelector {
+      @apply flex items-center gap-x-2;
+
+      >img {
+        @apply cursor-pointer;
+      }
+    }
+
+    .imgViewer {
+      @apply mt-6 rounded-md;
+    }
+  }
+}

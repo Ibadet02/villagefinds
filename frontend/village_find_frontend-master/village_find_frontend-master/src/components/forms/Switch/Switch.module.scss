@@ -1,0 +1,18 @@
+.root {
+  @apply flex h-6 w-9 justify-start rounded-full border-1 border-primary;
+
+  > .switch {
+    @apply flex aspect-square h-full items-center justify-center rounded-full bg-dark;
+    > svg {
+      @apply fill-white text-xs;
+    }
+  }
+}
+
+.root.active {
+  @apply justify-end border-danger;
+
+  > .switch {
+    @apply bg-success;
+  }
+}

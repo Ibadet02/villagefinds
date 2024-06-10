@@ -1,0 +1,45 @@
+.root {
+  .text {
+    @apply mb-10 space-y-1;
+
+    h1 {
+      @apply text-[16px] font-medium leading-[25px];
+    }
+
+    p {
+      @apply text-[13px] font-medium leading-[18px];
+    }
+  }
+
+  .forms {
+    @apply mb-24 flex w-full flex-col gap-y-6 xl:w-4/5;
+
+    .question {
+      @apply flex w-full gap-x-4;
+
+      .gridIcon {
+        @apply grid grid-cols-2 gap-0.5 self-center;
+
+        span {
+          @apply h-1.5 w-1.5 rounded-full border-1 border-primary;
+        }
+      }
+
+      .input {
+        @apply grow;
+      }
+    }
+  }
+
+  .buttons {
+    @apply flex justify-end gap-x-4;
+  }
+}
+
+.button {
+  @apply w-[120px] rounded-full border-1 border-primary bg-white px-0 py-2.5 text-[13px] font-medium leading-[18px] text-dark;
+}
+
+.addButton {
+  @apply bg-dark text-white;
+}

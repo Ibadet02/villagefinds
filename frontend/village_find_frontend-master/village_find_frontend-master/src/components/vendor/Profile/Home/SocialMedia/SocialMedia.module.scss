@@ -1,0 +1,33 @@
+.root {
+  .container {
+    @apply w-full space-y-6 lg:w-5/6;
+
+    .form {
+      @apply grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2;
+
+      .control {
+        @apply flex gap-x-4;
+
+        span {
+          @apply flex h-10 w-10 items-center justify-center rounded-full bg-dark;
+
+          .icon {
+            @apply h-6 w-6;
+          }
+        }
+
+        .urlInput {
+          @apply grow;
+        }
+      }
+    }
+
+    .buttonBar {
+      @apply flex justify-end;
+
+      button {
+        @apply rounded-full bg-dark px-6 py-2 text-xs text-white;
+      }
+    }
+  }
+}

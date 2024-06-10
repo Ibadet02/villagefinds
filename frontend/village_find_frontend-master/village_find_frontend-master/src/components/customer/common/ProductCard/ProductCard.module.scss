@@ -1,0 +1,59 @@
+.root {
+  @apply relative flex w-full max-w-[300px] cursor-pointer flex-col gap-y-2 rounded-md p-2 hover:shadow-lg;
+
+  .image {
+    @apply relative overflow-hidden rounded-md;
+
+    img {
+      @apply aspect-[4/3] w-full scale-125;
+    }
+  }
+
+  .moreContext {
+    @apply absolute left-1/2 top-1/2 z-10 flex w-full -translate-x-1/2 -translate-y-1/2 transform items-center justify-center gap-x-2 text-xl font-bold text-success;
+
+    span {
+      @apply flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-success;
+    }
+  }
+
+  h1 {
+    @apply text-xs font-bold xl:text-base;
+  }
+
+  p {
+    @apply text-[10px] xl:text-xs;
+  }
+
+  .prices {
+    @apply flex gap-x-2 text-sm xl:text-base;
+
+    .price {
+      @apply font-bold;
+    }
+
+    .totprice {
+      @apply text-warning line-through;
+    }
+
+    .discount {
+      @apply text-light;
+    }
+  }
+
+  .tags {
+    @apply absolute right-4 top-4 flex flex-col gap-y-2;
+
+    .tag {
+      @apply rounded-full border-1 border-danger px-2 py-0.5 text-[12px] leading-[18px] text-success;
+    }
+  }
+
+  .grayLayer {
+    @apply absolute left-0 top-0 h-full w-full bg-white/70;
+  }
+}
+
+.active {
+  @apply shadow-lg;
+}

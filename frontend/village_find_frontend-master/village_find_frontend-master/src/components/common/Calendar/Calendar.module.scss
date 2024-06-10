@@ -1,0 +1,71 @@
+.calendar {
+  @apply flex flex-col gap-y-6;
+
+  .content {
+    @apply flex w-[450px] flex-col gap-y-2;
+
+    .yearMonth {
+      @apply w-full rounded-md bg-dark p-2 text-white;
+    }
+
+    .body {
+      @apply flex flex-col;
+
+      .weekdays {
+        @apply flex justify-between py-2;
+
+        .weekday {
+          @apply flex w-10 shrink-0 justify-center text-[16px] leading-[22px];
+        }
+      }
+
+      .days {
+        @apply flex flex-wrap justify-between gap-x-6 gap-y-4 border-b-1 border-success py-4;
+
+        .day {
+          @apply flex aspect-square w-10 cursor-pointer items-center justify-center rounded-full bg-[#F2F2F2] text-[16px] leading-[22px];
+        }
+
+        .today {
+          @apply bg-warning;
+        }
+
+        .currentDay {
+          @apply bg-success text-white;
+        }
+
+        .availableDay {
+          @apply bg-light text-white;
+        }
+      }
+    }
+  }
+
+  .labels {
+    @apply flex gap-x-2;
+
+    .label {
+      @apply flex items-center gap-x-2;
+
+      span {
+        @apply aspect-square w-4 shrink-0 rounded-full;
+      }
+
+      p {
+        @apply text-[13px] leading-[18px] text-dark;
+      }
+    }
+
+    .available span {
+      @apply bg-light;
+    }
+
+    .current span {
+      @apply bg-warning;
+    }
+
+    .selected span {
+      @apply bg-success;
+    }
+  }
+}

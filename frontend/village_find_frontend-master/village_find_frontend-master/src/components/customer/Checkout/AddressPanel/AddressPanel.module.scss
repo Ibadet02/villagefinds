@@ -1,0 +1,33 @@
+.root {
+  @apply flex flex-col gap-y-4;
+
+  .head {
+    @apply text-[20px] font-bold leading-[15px];
+  }
+
+  .section {
+    @apply space-y-4;
+
+    .text {
+      @apply text-[20px] font-medium leading-[30px];
+    }
+
+    .horizon {
+      @apply grid grid-cols-1 gap-4 xl:grid-cols-2;
+    }
+
+    .addressBook {
+      & > div:nth-child(1) {
+        @apply border-2 border-primary;
+      }
+    }
+
+    .input input {
+      @apply border-1 border-primary placeholder:font-medium placeholder:text-primary focus:border-2 focus:border-danger;
+    }
+
+    .instruction textarea {
+      @apply placeholder:font-medium placeholder:text-primary;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.screen {
+  @apply fixed left-0 top-0 z-[1000] flex h-screen w-screen items-center justify-center bg-transparent;
+
+  > svg {
+    @apply h-24 w-24;
+  }
+}
+
+.page {
+  @apply bg-primary;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    stroke-dasharray: 1, 800;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 400, 400;
+    stroke-dashoffset: -200px;
+  }
+  100% {
+    stroke-dasharray: 800, 1;
+    stroke-dashoffset: -800px;
+  }
+}
+
+.spin {
+  transform-origin: center;
+  animation: spin2 1.5s ease-in-out infinite, spin 2s linear infinite;
+  animation-direction: alternate;
+}

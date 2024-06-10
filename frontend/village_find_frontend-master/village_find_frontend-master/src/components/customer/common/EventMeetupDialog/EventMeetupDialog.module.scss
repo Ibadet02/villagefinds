@@ -1,0 +1,170 @@
+.root {
+  @apply fixed left-0 top-0 z-[200] h-screen w-screen bg-black/20 px-20 py-20;
+
+  .container {
+    @apply relative flex h-full justify-center gap-x-14 rounded-md bg-white px-20 py-10;
+
+    .calendar {
+      @apply flex flex-col gap-y-6;
+
+      & > p {
+        @apply text-center text-[20px] font-bold leading-[30px] text-dark;
+      }
+
+      .updateButton {
+        @apply w-full py-4 text-[13px] font-medium leading-[18px];
+      }
+    }
+
+    .events {
+      @apply flex w-full max-w-[500px] shrink-0 flex-col gap-y-4 pt-[54px];
+
+      .event {
+        @apply flex w-full;
+
+        .bar {
+          @apply w-2 shrink-0;
+        }
+
+        .content {
+          @apply flex grow flex-col gap-y-2 px-6 py-5;
+
+          .titlebar {
+            @apply flex justify-between;
+
+            .register {
+              @apply flex flex-col gap-y-2.5;
+
+              .title {
+                @apply text-[16px] font-bold leading-[25px];
+              }
+
+              .regButton {
+                @apply self-start rounded-full px-6 py-1 text-[13px] font-medium leading-[18px] shadow-[0px_3px_6px_#00000029];
+              }
+            }
+
+            .date {
+              @apply flex flex-col items-center;
+
+              .day {
+                @apply text-[28px] font-bold leading-[42px];
+              }
+
+              .month {
+                @apply text-[16px] font-medium leading-[25px];
+              }
+            }
+          }
+
+          .detail {
+            @apply text-[13px] font-medium leading-[18px];
+          }
+        }
+      }
+
+      .inactive {
+        .bar {
+          @apply bg-success;
+        }
+
+        .content {
+          @apply border-1 border-secondary;
+        }
+
+        .content .titlebar .register {
+          .title {
+            @apply text-dark;
+          }
+
+          .regButton {
+            @apply bg-success text-white;
+          }
+        }
+
+        .content .titlebar .date {
+          .month,
+          .day {
+            @apply text-success;
+          }
+        }
+      }
+
+      .active {
+        .bar {
+          @apply bg-light;
+        }
+
+        .content {
+          @apply border-1 border-secondary bg-white;
+        }
+
+        .content .titlebar .register .title {
+          @apply text-dark;
+        }
+
+        .content .titlebar .date {
+          .month,
+          .day {
+            @apply text-success;
+          }
+        }
+
+        .content .detail {
+          @apply text-primary;
+        }
+      }
+
+      .selectedDay.active .content {
+        @apply border-none bg-light;
+
+        .titlebar .register .title {
+          @apply text-white;
+        }
+
+        .titlebar .date {
+          .month,
+          .day {
+            @apply text-white;
+          }
+        }
+
+        .detail {
+          @apply text-white;
+        }
+      }
+
+      .selectedDay.inactive {
+        .bar,
+        .content {
+          @apply border-none bg-success;
+        }
+
+        .content .titlebar .register {
+          .title {
+            @apply text-white;
+          }
+
+          .regButton {
+            @apply bg-white text-success;
+          }
+        }
+
+        .content .titlebar .date {
+          .month,
+          .day {
+            @apply text-white;
+          }
+        }
+
+        .content .detail {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  .closeBtn {
+    @apply absolute right-2.5 top-2 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full shadow-md;
+  }
+}

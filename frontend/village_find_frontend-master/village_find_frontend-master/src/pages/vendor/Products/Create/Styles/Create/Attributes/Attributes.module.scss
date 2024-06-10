@@ -1,0 +1,63 @@
+.container {
+  @apply space-y-4;
+
+  .heading span {
+    @apply font-bold;
+  }
+
+  .heading {
+    @apply mb-10;
+  }
+
+  .buttons {
+    @apply flex justify-end;
+
+    .updateBtn {
+      @apply rounded-full bg-dark px-10 py-2.5 text-base font-medium;
+    }
+  }
+}
+
+.cell {
+  @apply text-[13px] font-medium leading-[18px];
+}
+
+.priceInput,
+.inventoryInput {
+  @apply max-w-[100px] text-[13px] font-medium leading-[18px];
+}
+
+.inventoryInput input {
+  @apply text-center;
+}
+
+.statusSelect {
+  @apply text-[13px] font-medium leading-[18px];
+
+  div {
+    @apply max-w-[100px];
+  }
+
+  & div:nth-child(2) {
+    @apply mt-1 gap-y-1 rounded-md px-0 py-2;
+
+    span {
+      @apply px-2 py-0.5 text-left text-[13px] leading-[18px] hover:rounded-sm;
+    }
+  }
+}
+
+.imageInput {
+  @apply text-[13px] leading-[18px];
+}
+
+.dimensions {
+  @apply flex items-center gap-x-6;
+  > img {
+    @apply h-8 w-8 rounded-md;
+  }
+
+  span {
+    @apply flex h-6 w-6 shrink-0 cursor-pointer items-center justify-center rounded-full bg-info text-xl font-medium;
+  }
+}

@@ -1,0 +1,57 @@
+.root {
+  @apply space-y-6 rounded-md border-2 border-success p-8;
+
+  .head {
+    @apply text-[20px] font-bold leading-[30px];
+  }
+
+  .body {
+    @apply text-[16px] font-medium leading-[24px];
+  }
+
+  .donations {
+    @apply flex flex-wrap gap-4;
+
+    .donation {
+      @apply flex cursor-pointer items-center gap-x-3.5 rounded-md border-1 border-[#BDBDBD] px-4 py-7;
+
+      .check {
+        @apply flex aspect-square w-5 shrink-0 items-center justify-center rounded-full border-1 border-primary;
+      }
+
+      .price {
+        @apply text-dark;
+      }
+
+      .priceInput {
+        @apply ml-4;
+
+        input {
+          @apply w-16 bg-transparent outline-none;
+        }
+      }
+    }
+
+    .active {
+      @apply border-0 bg-light;
+
+      .check {
+        @apply border-0 bg-white;
+      }
+
+      .price {
+        @apply text-white;
+      }
+
+      .priceInput {
+        span {
+          @apply text-white;
+        }
+
+        input {
+          @apply text-white;
+        }
+      }
+    }
+  }
+}

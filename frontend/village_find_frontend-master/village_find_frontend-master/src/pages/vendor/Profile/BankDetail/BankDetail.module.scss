@@ -1,0 +1,52 @@
+.root {
+  p {
+    @apply text-[12.5px];
+  }
+
+  & > p {
+    @apply mb-9 max-w-[550px];
+  }
+
+  .container {
+    @apply flex justify-between;
+
+    .instruction {
+      @apply flex max-w-[550px] flex-col gap-y-4;
+
+      .step {
+        @apply flex flex-col gap-y-2;
+
+        h3 {
+          @apply font-bold;
+        }
+
+        .subHeading {
+          @apply text-base;
+        }
+      }
+    }
+
+    .panel {
+      @apply pr-20;
+
+      img {
+        @apply mb-2;
+      }
+
+      p {
+        @apply mb-7;
+      }
+
+      button {
+        @apply rounded-full bg-dark px-16 py-3 text-xs text-white;
+      }
+    }
+  }
+}
+
+p.title {
+  @apply flex items-center gap-x-4 text-xl;
+  > span {
+    @apply rounded-md bg-success px-2.5 py-0.5 text-xs text-white;
+  }
+}

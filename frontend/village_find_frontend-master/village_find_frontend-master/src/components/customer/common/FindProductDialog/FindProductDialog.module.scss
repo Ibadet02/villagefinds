@@ -1,0 +1,57 @@
+.root {
+    @apply fixed w-screen h-screen bg-black/30 flex items-center justify-center z-[50] top-0 left-0;
+
+    .container {
+        @apply max-w-screen-md relative py-10 px-20 w-full bg-white shadow-lg rounded-lg;
+
+        .content {
+            @apply max-w-[400px] flex flex-col gap-y-10;
+
+            h1 {
+                @apply text-[28px] leading-[42px] font-bold;
+            }
+
+            .zipcode {
+                @apply flex flex-col gap-y-2;
+
+                label {
+                    @apply text-[16px] leading-[25px] font-bold;
+                }
+
+                .input {
+                    input {
+                        @apply rounded-none border-primary border-1 text-[16px] leading-[25px];
+                    }
+                }
+
+                p {
+                    @apply text-[16px] leading-[25px];
+                }
+            }
+
+            .buttons {
+                @apply flex gap-x-10;
+
+                .button {
+                    @apply text-[20px] leading-[30px] font-bold py-1.5;
+                }
+
+                .applyBtn {
+                    @apply bg-dark text-white w-[180px];
+                }
+
+                .cancelBtn {
+                    @apply border-2 border-primary bg-white text-dark w-[180px];
+                }
+            }
+        }
+
+        .closeBtn {
+            @apply absolute top-3 right-3 w-12 h-12 rounded-full shadow-md flex items-center justify-center cursor-pointer;
+        }
+    }
+}
+
+.hide {
+    @apply hidden;
+}

@@ -1,0 +1,39 @@
+.root {
+  @apply mb-6 mt-10;
+
+  .steps {
+    @apply mt-8 flex gap-4;
+
+    .step {
+      @apply relative flex w-48 flex-col items-center gap-y-4 rounded-lg bg-primary p-4 pb-8;
+
+      h4 {
+        @apply text-base font-bold;
+      }
+
+      p {
+        @apply flex items-center text-xs;
+      }
+
+      .title {
+        @apply text-base;
+      }
+
+      .icon {
+        @apply absolute right-2 top-2 h-3 w-3;
+      }
+    }
+
+    .active {
+      @apply cursor-pointer bg-success;
+
+      h4 {
+        @apply mb-4;
+      }
+
+      * {
+        @apply text-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.root {
+  @apply flex w-full flex-col gap-y-6;
+
+  h1 {
+    @apply text-[32px] font-bold leading-[36px] text-dark;
+  }
+
+  .card {
+    .share {
+      @apply flex items-center text-[20px] leading-[24px];
+
+      span {
+        @apply mx-1 cursor-pointer rounded-md bg-success p-1 text-white;
+      }
+    }
+
+    .text {
+      @apply space-y-2;
+
+      .earning,
+      .vendors {
+        @apply font-bold text-success;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.root {
+  @apply hidden h-10 w-full shrink-0 bg-white shadow-md sm:block;
+
+  .container {
+    @apply h-full;
+
+    .navbar {
+      @apply flex h-full items-center gap-x-8;
+
+      li {
+        @apply relative flex cursor-pointer flex-col after:absolute after:top-full after:w-full after:translate-y-1.5 after:transform after:bg-light hover:after:h-0.5;
+        > div {
+          @apply flex items-center gap-x-1;
+        }
+      }
+      li.active {
+        @apply after:h-0.5;
+      }
+      li.emphasize {
+        @apply text-light;
+      }
+    }
+  }
+}

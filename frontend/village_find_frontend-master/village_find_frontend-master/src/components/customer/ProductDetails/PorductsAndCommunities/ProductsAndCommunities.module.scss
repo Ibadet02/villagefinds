@@ -1,0 +1,53 @@
+.root {
+  .mightLike {
+    @apply space-y-8;
+
+    .title {
+      @apply text-[20px] font-bold leading-[30px];
+    }
+
+    .products {
+      @apply grid grid-cols-2 gap-4 xl:flex;
+    }
+  }
+
+  .shopCommunities {
+    @apply hidden space-y-8 xl:block;
+
+    .title {
+      @apply text-[20px] font-bold leading-[30px];
+    }
+
+    .communities {
+      @apply relative flex w-full gap-x-4 overflow-x-hidden pb-2;
+
+      .shopvcom {
+        @apply flex w-[90%] shrink-0 cursor-pointer gap-x-2 rounded-lg p-2 hover:shadow-md md:w-[50%] xl:w-[30%];
+
+        img {
+          @apply aspect-square h-full max-w-[100px] rounded-md;
+        }
+
+        .vcomText {
+          @apply flex h-full flex-col gap-y-2 text-xs;
+
+          .name {
+            @apply text-sm font-bold;
+          }
+
+          .catLabel {
+            @apply font-bold;
+          }
+
+          .category {
+            @apply self-start rounded-md bg-warning p-2;
+          }
+        }
+      }
+
+      .nextIcon {
+        @apply absolute right-4 top-1/2 flex h-10 w-10 shrink-0 -translate-y-1/2 transform cursor-pointer items-center justify-center rounded-full bg-success;
+      }
+    }
+  }
+}

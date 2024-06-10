@@ -1,0 +1,29 @@
+.root {
+  .form {
+    @apply space-y-4;
+
+    .control {
+      @apply space-y-2;
+    }
+
+    .textField {
+      @apply text-base;
+    }
+
+    .revInput {
+      @apply w-fit min-w-0 text-base;
+    }
+  }
+
+  .buttonBar {
+    @apply flex justify-end gap-x-4;
+
+    .button {
+      @apply rounded-full border border-primary px-9 py-3 text-xs;
+    }
+
+    .updateBtn {
+      @apply bg-dark text-white;
+    }
+  }
+}

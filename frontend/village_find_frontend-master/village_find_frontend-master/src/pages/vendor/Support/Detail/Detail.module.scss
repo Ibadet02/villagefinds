@@ -1,0 +1,40 @@
+.root {
+  @apply flex flex-col items-center gap-y-10 p-4;
+
+  .backImage {
+    @apply relative w-full;
+
+    img {
+      @apply w-full rounded-2xl;
+    }
+
+    span {
+      @apply absolute left-10 top-10 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-info;
+    }
+  }
+
+  .container {
+    @apply flex flex-col items-center space-y-12 p-40;
+
+    .header {
+      @apply space-y-1 text-center;
+
+      h1 {
+        @apply text-2xl;
+      }
+
+      h1,
+      p {
+        @apply font-bold;
+      }
+
+      span {
+        @apply font-normal;
+      }
+    }
+
+    .videoPlayer {
+      @apply w-full rounded-2xl bg-red-400;
+    }
+  }
+}

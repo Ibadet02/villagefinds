@@ -1,0 +1,19 @@
+.root {
+  @apply space-y-6;
+
+  .artisan {
+    @apply flex items-center gap-x-4;
+
+    .image {
+      @apply h-16 w-16;
+    }
+
+    & > p {
+      @apply font-bold;
+    }
+
+    .select {
+      @apply w-fit min-w-0;
+    }
+  }
+}

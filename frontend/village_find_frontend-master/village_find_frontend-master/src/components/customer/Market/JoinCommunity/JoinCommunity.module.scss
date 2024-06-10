@@ -1,0 +1,35 @@
+.root {
+  @apply space-y-10 py-10;
+
+  h1 {
+    @apply text-[20px] font-bold leading-[24px] md:text-[28px] md:leading-[42px];
+  }
+
+  .communities {
+    @apply grid grid-cols-1 gap-4 md:grid-cols-3;
+
+    .community {
+      @apply max-h-[] space-y-4;
+
+      .image {
+        @apply overflow-hidden rounded-md shadow-lg;
+
+        img {
+          @apply aspect-square w-full scale-110;
+        }
+      }
+
+      p {
+        @apply text-[16px] font-bold leading-[20px] md:text-[20px] md:leading-[30px];
+      }
+    }
+  }
+
+  .btnWrapper {
+    @apply flex justify-center py-10;
+
+    .moreButton {
+      @apply border-1 border-secondary bg-white px-4 py-2.5 text-[16px] font-normal leading-[25px] text-primary;
+    }
+  }
+}

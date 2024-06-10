@@ -1,0 +1,19 @@
+.root {
+  @apply relative mx-auto max-w-full px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg xl:py-6 2xl:max-w-screen-xl 3xl:max-w-screen-2xl;
+
+  .catWrapper {
+    @apply relative;
+  }
+
+  .container {
+    @apply relative flex aspect-[3/1] w-full items-center justify-center bg-[url('/assets/customer/market/dashboard.png')] bg-[length:100%_100%] bg-center bg-no-repeat xl:aspect-[6/1];
+
+    h1 {
+      @apply relative z-10 font-candara text-[20px] font-bold leading-[24px] text-white xl:text-[54px] xl:leading-[66px];
+    }
+
+    .grayLayer {
+      @apply absolute z-0 h-full w-full bg-black/25;
+    }
+  }
+}

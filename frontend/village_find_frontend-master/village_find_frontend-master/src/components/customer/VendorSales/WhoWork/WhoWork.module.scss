@@ -1,0 +1,64 @@
+.root {
+  @apply hidden bg-light py-16 md:flex;
+
+  .container {
+    @apply flex w-full flex-col gap-20 xl:flex-row;
+
+    .text {
+      @apply space-y-9;
+
+      .head {
+        @apply flex gap-x-8;
+
+        h1 {
+          @apply text-[48px] font-bold leading-[72px] text-primary;
+        }
+
+        .list {
+          @apply flex items-center gap-x-5;
+
+          span {
+            @apply h-4 w-4;
+          }
+
+          .rect {
+            @apply rotate-45 transform bg-success;
+          }
+
+          .circle {
+            @apply rounded-full bg-warning;
+          }
+
+          .tri {
+            clip-path: polygon(50% 0, 0 100%, 100% 100%);
+            @apply bg-danger;
+          }
+
+          .squ {
+            @apply bg-info;
+          }
+        }
+      }
+
+      .workers {
+        @apply space-y-12;
+
+        .worker {
+          @apply space-y-4;
+
+          p {
+            @apply text-white;
+          }
+
+          .head {
+            @apply text-[28px] font-bold leading-[42px];
+          }
+        }
+      }
+    }
+
+    .images {
+      @apply flex justify-between overflow-x-auto xl:flex-col;
+    }
+  }
+}

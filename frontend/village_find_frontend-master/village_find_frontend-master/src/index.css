@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('/fonts/avenir-next/AvenirNextLTPro-Regular.otf');
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Poppins';
+  @apply text-primary;
+}
+
+::-webkit-scrollbar {
+  @apply h-2 w-2 bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-dark/70;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type='time']::-webkit-calendar-picker-indicator {
+  display: none;
+}

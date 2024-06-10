@@ -1,0 +1,229 @@
+.root {
+  @apply relative pt-20;
+
+  .container {
+    @apply flex justify-center text-center;
+
+    .wrapper {
+      @apply w-full md:w-2/3 xl:w-1/2;
+
+      & > h1 {
+        @apply mb-6 text-2xl font-bold xl:text-5xl;
+      }
+
+      & > p {
+        @apply mb-20 xl:px-10;
+      }
+
+      .ccommerce {
+        @apply rounded-md border border-light p-4 text-left;
+
+        h2 {
+          @apply font-bold;
+        }
+      }
+    }
+  }
+
+  .vback {
+    @apply relative z-0 mb-40 mt-10 flex overflow-x-hidden pb-44;
+
+    .vPatternImage {
+      @apply absolute top-0 -z-10 mb-64 h-full w-full scale-x-150 transform;
+    }
+
+    .vcontainer {
+      @apply flex flex-col items-center pt-24;
+
+      & > h4 {
+        @apply mb-12 text-xl font-bold xl:mb-16;
+      }
+
+      .communities {
+        @apply mb-16 grid grid-cols-1 gap-10 text-center xl:mb-24 xl:grid-cols-2;
+
+        .community {
+          @apply flex flex-col gap-x-10 gap-y-8 sm:flex-row xl:text-left;
+
+          .avatar {
+            @apply w-auto self-center;
+          }
+
+          .content {
+            @apply space-y-2;
+
+            .header {
+              @apply font-bold;
+            }
+          }
+        }
+      }
+
+      .vtypes {
+        @apply w-full xl:w-4/5;
+
+        .content {
+          @apply mb-20 w-full  space-y-1 xl:mb-10 xl:w-2/3;
+
+          .header {
+            @apply text-xl font-bold;
+          }
+        }
+
+        .vendors {
+          @apply grid grid-cols-1 gap-10 md:grid-cols-3;
+
+          .vendor {
+            @apply space-y-4;
+
+            & > h6 {
+              @apply text-xl font-bold text-success;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vtypeImages {
+    @apply absolute left-1/2 z-20 h-fit w-full -translate-x-1/2 -translate-y-80 overflow-x-auto;
+
+    .imagesWrapper {
+      @apply flex w-full gap-x-4 lg:grid lg:grid-cols-3;
+
+      img {
+        @apply w-full shrink-0;
+      }
+    }
+  }
+
+  .readyToShop {
+    @apply space-y-12 md:py-16;
+
+    p {
+      @apply hidden text-center text-5xl font-bold lg:block;
+    }
+
+    .linkImages {
+      @apply grid grid-cols-1 md:grid-cols-3;
+
+      .linkImage {
+        @apply relative flex aspect-square w-full items-center justify-center overflow-hidden after:absolute after:-z-10 after:hidden after:aspect-square after:w-[95%] after:border-1 after:border-warning hover:after:block;
+
+        img {
+          @apply absolute -z-20 h-full w-full scale-125;
+        }
+
+        .linkTitle {
+          @apply min-w-[250px] shrink-0 cursor-pointer rounded-[4px] py-2 text-center text-xl font-extrabold tracking-wide text-white md:text-xl;
+        }
+      }
+
+      .linkImage:hover {
+        .linkTitle {
+          @apply bg-warning text-success;
+        }
+      }
+    }
+  }
+
+  .vendorCommunities {
+    @apply space-y-14 py-10;
+
+    & > p {
+      @apply text-center text-lg font-bold md:text-2xl xl:text-5xl;
+    }
+
+    .shopComWrapper {
+      @apply flex w-full flex-col items-center gap-y-8;
+
+      .categories {
+        @apply flex w-full items-center gap-x-4 overflow-x-auto pb-4;
+
+        & > span {
+          @apply flex shrink-0 gap-x-2 text-lg font-bold text-success after:border-l-2 after:border-l-danger;
+        }
+
+        & > ul {
+          @apply flex gap-x-2;
+
+          li {
+            @apply shrink-0 cursor-pointer text-sm;
+          }
+
+          .active {
+            @apply font-bold;
+          }
+        }
+      }
+
+      .communities {
+        @apply flex w-full gap-x-4 overflow-x-auto pb-2;
+
+        .shopvcom {
+          @apply flex w-[90%] shrink-0 cursor-pointer gap-x-2 rounded-lg p-2 hover:shadow-md md:w-[50%] xl:w-[30%];
+
+          img {
+            @apply aspect-square h-full max-w-[100px] rounded-md;
+          }
+
+          .vcomText {
+            @apply flex h-full flex-col justify-center gap-y-2 text-xs;
+
+            .name {
+              @apply text-sm font-bold;
+            }
+
+            .catLabel {
+              @apply font-bold;
+            }
+
+            .category {
+              @apply self-start rounded-md bg-warning p-2;
+            }
+          }
+        }
+      }
+
+      .exCommunities {
+        @apply grid hidden w-full gap-6 xl:grid xl:grid-cols-3 xl:grid-rows-3;
+
+        .heading {
+          @apply flex items-center text-3xl font-bold;
+        }
+
+        .image1 {
+          @apply col-span-1 row-span-1 overflow-hidden rounded-md;
+
+          img {
+            @apply h-full w-full;
+          }
+        }
+
+        .image2 {
+          @apply col-start-1 row-span-2 row-start-2 overflow-hidden rounded-md;
+
+          img {
+            @apply h-full w-full;
+          }
+        }
+
+        .image3 {
+          @apply col-start-2 row-span-2 row-start-2 overflow-hidden rounded-md;
+
+          img {
+            @apply h-full w-full;
+          }
+        }
+
+        .findCom {
+          @apply col-start-3 row-span-3 flex flex-col justify-center gap-y-4 p-2;
+
+          .button {
+            @apply max-w-[200px] border-2 border-danger bg-white text-sm text-success;
+          }
+        }
+      }
+    }
+  }
+}

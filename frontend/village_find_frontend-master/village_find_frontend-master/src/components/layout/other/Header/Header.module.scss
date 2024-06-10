@@ -1,0 +1,7 @@
+.root {
+  @apply mb-10 flex w-full gap-x-6;
+
+  .searchInput {
+    @apply h-fit grow;
+  }
+}

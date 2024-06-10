@@ -1,0 +1,128 @@
+.root {
+  @apply relative text-xs;
+
+  .input {
+    @apply w-full min-w-0 rounded-md border-0.5 border-primary px-4 py-3 placeholder-secondary outline-none;
+  }
+
+  .error {
+    @apply translate-y-2 text-red-500;
+  }
+
+  .circleBar {
+    @apply absolute top-1/2 flex h-7 w-7 -translate-y-1/2 transform items-center justify-center rounded-full bg-info text-success;
+
+    & * {
+      @apply h-4 w-4;
+    }
+  }
+
+  .textBar {
+    @apply absolute top-1/2 -translate-y-1/2 transform;
+  }
+
+  .leftAdorn {
+    @apply left-0 ml-1.5;
+  }
+
+  .rightAdorn {
+    @apply right-0 mr-1.5;
+  }
+}
+
+.adornmentLeft {
+  .textBar {
+    @apply pl-2;
+  }
+
+  .input {
+    @apply pl-10;
+  }
+}
+
+.adornmentRight {
+  .textBar {
+    @apply pr-2;
+  }
+
+  .input {
+    @apply pr-10;
+  }
+}
+
+.roundedFull {
+  .input {
+    @apply rounded-full;
+  }
+}
+
+.borderNone {
+  .input {
+    @apply border-none;
+  }
+}
+
+.sizeLarge {
+  .input {
+    @apply px-6 py-4;
+  }
+
+  .circleBar {
+    @apply h-9 w-9;
+
+    & * {
+      @apply h-5 w-5;
+    }
+  }
+
+  .leftAdorn {
+    @apply ml-2;
+  }
+
+  .rightAdorn {
+    @apply mr-2;
+  }
+}
+
+.selectNone .input {
+  @apply select-none;
+}
+
+.bgColorSecondary .input {
+  @apply bg-primary;
+}
+
+.borderColorSuccess .input {
+  @apply border-2 border-success placeholder-secondary;
+}
+
+.borderColorPrimary .input {
+  @apply border-1 border-primary placeholder-primary;
+}
+
+.borderColorDanger .input {
+  @apply border-1 border-red-500;
+}
+
+.borderNone .input {
+  @apply placeholder-secondary;
+}
+
+.isText {
+}
+
+.fileInput {
+  @apply flex cursor-pointer items-center gap-x-2 overflow-hidden rounded-full bg-primary p-2 pr-4;
+
+  > input {
+    @apply hidden;
+  }
+
+  > button {
+    @apply shrink-0 rounded-full bg-secondary px-2 py-1;
+  }
+
+  > p {
+    @apply line-clamp-1;
+  }
+}

@@ -1,0 +1,51 @@
+.root {
+  @apply flex w-full max-w-screen-xs flex-col items-center gap-y-4;
+
+  .head {
+    @apply text-[20px] font-bold leading-[30px];
+  }
+
+  .rating {
+    @apply space-y-4;
+
+    .text {
+      @apply text-center text-[20px] leading-[30px];
+    }
+  }
+
+  .formElement {
+    @apply mt-9 w-full space-y-10;
+
+    .text {
+      @apply text-center text-[20px] leading-[30px];
+    }
+
+    .titleInput {
+      @apply w-full max-w-none text-[20px] leading-[30px];
+
+      input {
+        @apply border-1 border-primary py-1.5;
+      }
+    }
+
+    .bodyInput {
+      @apply w-full text-[20px] leading-[30px];
+    }
+  }
+
+  .buttons {
+    @apply flex gap-x-10;
+
+    .button {
+      @apply w-[180px] py-1.5 text-[20px] leading-[30px];
+    }
+
+    .submitBtn {
+      @apply bg-dark text-white;
+    }
+
+    .cancelBtn {
+      @apply border-1 border-primary bg-white text-primary;
+    }
+  }
+}

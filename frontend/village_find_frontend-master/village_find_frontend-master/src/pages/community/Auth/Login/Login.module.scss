@@ -1,0 +1,25 @@
+.root {
+  .panel {
+    @apply mx-auto mt-12 flex max-w-screen-xs flex-col items-center gap-y-4 rounded-md border-1 border-gray-300 px-4 py-8;
+
+    h1 {
+      @apply text-[24px] font-bold leading-[32px] text-blue-500;
+    }
+
+    .input {
+      @apply w-full;
+
+      input {
+        @apply border-gray-300 focus:border-blue-500 focus:ring-3 focus:ring-blue-300;
+      }
+    }
+
+    button {
+      @apply w-full rounded-md bg-green-500 py-2 text-[18px] leading-[24px] text-white;
+    }
+
+    .signup {
+      @apply text-blue-500;
+    }
+  }
+}

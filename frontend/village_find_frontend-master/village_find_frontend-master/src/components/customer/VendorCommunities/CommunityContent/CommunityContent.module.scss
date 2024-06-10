@@ -1,0 +1,73 @@
+.root {
+  @apply flex grow flex-col gap-y-2;
+
+  .header {
+    @apply hidden w-full justify-between xl:flex;
+
+    .title {
+      @apply space-y-1;
+
+      p {
+        @apply text-[20px] font-bold leading-[30px];
+      }
+
+      span {
+        @apply text-[16px] leading-[25px];
+      }
+    }
+
+    .settings {
+      @apply flex items-center gap-x-4;
+
+      .zipcode {
+        input {
+          @apply border-1;
+        }
+
+        span {
+          @apply bg-secondary;
+        }
+      }
+
+      .filter {
+        @apply flex cursor-pointer items-center gap-x-3 rounded-[4px] bg-dark px-4 py-[5px];
+
+        p {
+          @apply text-white;
+        }
+
+        span {
+          @apply flex h-8 w-8 items-center justify-center rounded-full bg-secondary;
+        }
+      }
+    }
+  }
+
+  .mobileHeader {
+    @apply text-sm font-bold sm:hidden;
+
+    .filter {
+      @apply flex flex-col items-end gap-y-10 md:hidden;
+
+      .search {
+        @apply w-full;
+
+        span {
+          @apply bg-black;
+        }
+      }
+
+      .filterIcon {
+        @apply flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-black;
+
+        .container {
+          @apply grid h-2/3 w-2/3 grid-cols-3 grid-rows-3 place-content-center place-items-center;
+
+          .iconGrid {
+            @apply h-2 w-2 rounded-full bg-white;
+          }
+        }
+      }
+    }
+  }
+}

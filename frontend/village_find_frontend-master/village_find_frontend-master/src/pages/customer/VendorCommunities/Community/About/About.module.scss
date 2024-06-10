@@ -1,0 +1,71 @@
+.root {
+  @apply space-y-16;
+
+  .backImage {
+    @apply aspect-[3/1] w-full overflow-hidden;
+
+    img {
+      @apply h-full w-full scale-110 transform;
+    }
+  }
+
+  .container {
+    @apply flex flex-col items-center gap-y-20 pb-32;
+
+    .title {
+      @apply flex max-w-[800px] flex-col items-center gap-y-6;
+
+      h3 {
+        @apply text-center text-[20px] font-bold leading-[30px];
+      }
+
+      p {
+        @apply text-center;
+      }
+    }
+
+    .story {
+      @apply space-y-3;
+
+      h3 {
+        @apply text-[20px] font-bold leading-[30px];
+      }
+
+      .body {
+        @apply flex flex-col gap-y-6 text-[16px] leading-[25px];
+      }
+    }
+
+    .contact {
+      @apply w-full space-y-4;
+
+      h3 {
+        @apply text-[20px] font-bold leading-[30px];
+      }
+
+      .wrapper {
+        @apply flex flex-col gap-x-6 gap-y-4 md:flex-row;
+
+        .link {
+          @apply flex gap-x-4;
+
+          span {
+            @apply flex h-10 w-10 items-center justify-center rounded-full bg-dark;
+          }
+        }
+
+        .linkCopier {
+          @apply w-[350px];
+
+          input {
+            @apply border-1.5 placeholder:text-[13px] placeholder:leading-[18px] placeholder:text-primary disabled:bg-white;
+          }
+
+          .copyBtn {
+            @apply mr-4 flex bg-dark text-[13px] font-normal leading-[18px] text-white;
+          }
+        }
+      }
+    }
+  }
+}

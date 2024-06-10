@@ -1,0 +1,21 @@
+.root {
+  .dashboard {
+    @apply relative my-4 h-[600px] w-full overflow-hidden rounded-md object-cover;
+
+    .content {
+      @apply absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-y-4 bg-black/30 text-center;
+
+      h1 {
+        @apply text-[48px] font-bold leading-[60px] text-white;
+      }
+
+      p {
+        @apply text-[18px] leading-[20px] text-white;
+      }
+
+      button {
+        @apply rounded-md border-3 border-blue-500 bg-white px-6 py-4 text-blue-500;
+      }
+    }
+  }
+}

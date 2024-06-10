@@ -1,0 +1,19 @@
+.root {
+  @apply flex items-center text-primary;
+
+  .minute {
+    @apply mr-2;
+  }
+
+  .colon {
+    @apply text-base text-primary;
+  }
+}
+
+.active {
+  @apply text-white;
+
+  .colon {
+    @apply text-white;
+  }
+}

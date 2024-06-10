@@ -1,0 +1,78 @@
+.navCards {
+  @apply mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4;
+  > div {
+    @apply cursor-pointer;
+  }
+}
+
+.textCenter {
+  @apply text-center;
+}
+
+.summaryPanel {
+  @apply mb-6 grid grid-cols-1 gap-6 lg:grid-cols-3;
+
+  .sales {
+    @apply bg-success text-white;
+
+    & * {
+      @apply text-white;
+    }
+
+    .rows {
+      @apply flex flex-col gap-y-4;
+    }
+
+    .row {
+      @apply flex justify-between;
+
+      p {
+        @apply text-white;
+      }
+
+      .price {
+        @apply font-bold;
+      }
+    }
+
+    .totalRow {
+      @apply px-4 text-3xl font-bold;
+    }
+
+    .divider {
+      @apply border-t border-t-white;
+    }
+  }
+
+  .customers {
+    @apply col-span-2 pl-10;
+
+    .newCustomer {
+      @apply ml-4 font-bold;
+    }
+  }
+
+  .customerTitle {
+    @apply flex justify-between;
+
+    p {
+      @apply mr-1 font-bold;
+    }
+
+    .row {
+      @apply flex;
+    }
+
+    .weekButton {
+      @apply rounded-full bg-dark p-4 text-xs text-white;
+    }
+  }
+}
+
+.statisPanel {
+  @apply grid grid-cols-1 gap-x-6 lg:grid-cols-3;
+
+  .row {
+    @apply flex justify-between font-bold;
+  }
+}

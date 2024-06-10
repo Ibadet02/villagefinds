@@ -1,0 +1,116 @@
+.root {
+  @apply space-y-10 py-6;
+
+  .dashboard {
+    @apply flex aspect-[2/1] w-full items-center justify-center rounded-xl bg-[url('/assets/customer/backs/excom2.png')] bg-cover bg-center bg-no-repeat xl:aspect-[6/1];
+
+    h2 {
+      @apply text-[24px] font-bold leading-[32px] text-white xl:text-[54px] xl:leading-[66px];
+    }
+  }
+
+  .container {
+    @apply flex flex-col items-center;
+
+    .head {
+      @apply max-w-[750px];
+
+      h1 {
+        @apply px-10 text-center text-[24px] font-bold leading-[32px] xl:text-[48px] xl:leading-[72px];
+      }
+
+      p {
+        @apply p-6 text-center text-[16px] leading-[25px];
+      }
+    }
+  }
+
+  .main {
+    @apply flex w-full gap-x-12;
+
+    .leftbar {
+      @apply hidden shrink-0 gap-y-5 lg:flex lg:flex-col;
+
+      & > p {
+        @apply text-[20px] font-bold leading-[30px];
+      }
+
+      .categories {
+        @apply flex flex-col gap-y-3.5;
+
+        li {
+          @apply flex cursor-pointer items-center gap-x-2 pl-2;
+
+          span {
+            @apply h-4 w-4 shrink-0 border-1 border-primary;
+          }
+
+          p {
+            @apply text-[16px] leading-[25px];
+          }
+        }
+
+        .active {
+          @apply rounded-md bg-dark;
+
+          span {
+            @apply border-secondary;
+          }
+
+          p {
+            @apply text-white;
+          }
+        }
+      }
+    }
+
+    .section {
+      @apply flex grow flex-col gap-y-3;
+
+      .selectors {
+        @apply space-y-4 lg:hidden;
+
+        .interests {
+          @apply rounded-full shadow-md;
+
+          span {
+            @apply text-[18px];
+          }
+        }
+
+        .search {
+          span {
+            @apply bg-success;
+          }
+
+          .icon {
+          }
+        }
+      }
+
+      .header {
+        @apply flex justify-between;
+
+        .title {
+          @apply flex flex-col gap-y-2.5;
+
+          p {
+            @apply text-[20px] font-bold leading-[30px];
+          }
+
+          span {
+            @apply text-[16px] leading-[25px];
+          }
+        }
+
+        .filterInput {
+          @apply hidden w-[300px] self-start lg:flex;
+        }
+      }
+
+      .body {
+        @apply grid grid-cols-1 gap-6 xl:grid-cols-2;
+      }
+    }
+  }
+}

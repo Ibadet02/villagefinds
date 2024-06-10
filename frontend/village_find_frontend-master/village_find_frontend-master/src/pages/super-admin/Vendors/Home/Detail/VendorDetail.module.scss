@@ -1,0 +1,98 @@
+.root {
+  p {
+    @apply font-medium;
+  }
+
+  .backButton {
+    @apply mb-6 rounded-full bg-dark px-6 py-2 text-white;
+  }
+
+  .topSection {
+    @apply mb-6 flex gap-x-6 gap-y-6;
+
+    h1 {
+      @apply text-xl font-bold;
+    }
+
+    .card {
+      @apply flex h-full w-fit flex-col justify-center gap-y-2;
+
+      p {
+        span {
+          @apply font-bold;
+        }
+      }
+    }
+
+    .statusSelector {
+      @apply w-fit min-w-0;
+
+      & > div:nth-child(1) {
+        @apply py-2 text-base font-medium;
+      }
+    }
+
+    .comInput {
+      @apply min-w-0 max-w-[110px] text-base font-medium;
+
+      input {
+        @apply py-2;
+      }
+    }
+
+    .rateBar {
+      @apply flex gap-x-0.5;
+    }
+
+    .communities {
+      @apply flex items-center gap-x-4;
+
+      span {
+        @apply font-medium;
+      }
+    }
+  }
+
+  .vendorSection {
+    @apply mb-6 w-full space-y-8;
+
+    h2 {
+      @apply mb-10 text-xl font-bold;
+    }
+
+    .vendorInfo,
+    .contactInfo {
+      .horizon {
+        @apply mb-4 flex items-center;
+
+        .label {
+          @apply basis-[200px] font-bold;
+        }
+      }
+
+      .feeInput {
+        @apply min-w-0 max-w-[110px] text-base font-medium;
+
+        input {
+          @apply py-2;
+        }
+      }
+
+      .locationInput {
+        @apply h-fit w-fit min-w-0;
+      }
+    }
+  }
+}
+
+.payStatus {
+  @apply min-w-[88px] rounded-md py-1 text-center;
+}
+
+.paid {
+  @apply bg-info;
+}
+
+.unpaid {
+  @apply bg-dark text-white;
+}

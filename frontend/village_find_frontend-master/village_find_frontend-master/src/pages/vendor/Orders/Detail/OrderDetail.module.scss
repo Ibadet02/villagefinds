@@ -1,0 +1,136 @@
+.root {
+  .backButton {
+    @apply mb-6 rounded-full bg-dark px-6 py-2 text-white;
+  }
+
+  .detail {
+    @apply mb-6 w-fit;
+
+    h1 {
+      @apply text-xl font-bold;
+    }
+
+    p {
+      span {
+        @apply font-bold;
+      }
+    }
+  }
+
+  .infoSection {
+    @apply mb-6;
+
+    .subInfo {
+      @apply mb-10;
+
+      h2 {
+        @apply mb-10 text-xl font-bold;
+      }
+
+      .addressIput {
+        @apply w-64 text-base;
+      }
+    }
+  }
+
+  .personSection {
+    @apply mb-6;
+
+    h1 {
+      @apply text-xl;
+    }
+  }
+
+  .shippingTableSection {
+    @apply mb-6;
+  }
+
+  .homeDelSection {
+    @apply mb-6;
+
+    h1 {
+      @apply text-xl;
+    }
+
+    .form {
+      @apply mt-10;
+    }
+  }
+
+  .customInfo {
+    @apply mb-6;
+  }
+}
+
+.bold {
+  @apply font-bold;
+}
+
+.horizon {
+  @apply mb-4 flex items-center;
+
+  .label {
+    @apply shrink-0 basis-60 font-bold;
+  }
+
+  > .addressInput {
+    span {
+      @apply cursor-pointer;
+    }
+  }
+}
+
+.orderImage {
+  @apply h-10 w-10;
+}
+
+.shippingTable {
+  @apply overflow-x-auto text-xs;
+}
+
+.homeDeliveryTable {
+  @apply text-xs;
+}
+
+.shippingExpandPanel {
+  @apply my-9 flex flex-col gap-y-4 px-6 lg:grid-cols-2;
+
+  .subPanel {
+    h3 {
+      @apply mb-6 text-xl font-bold;
+    }
+
+    p {
+      @apply text-base;
+    }
+  }
+
+  .actions {
+    @apply flex gap-x-4;
+
+    .button {
+      @apply rounded-full px-7 py-3 text-white;
+    }
+
+    .refund {
+      @apply bg-dark;
+    }
+
+    .replace {
+      @apply bg-success;
+    }
+
+    .print {
+      @apply w-24;
+    }
+  }
+}
+
+.productName,
+.netPrice {
+  @apply font-bold;
+}
+
+.productImage {
+  @apply h-12 w-12;
+}

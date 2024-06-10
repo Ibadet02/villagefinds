@@ -1,0 +1,184 @@
+.root {
+  @apply w-full bg-white;
+
+  .header {
+    @apply relative flex h-16 shrink-0 items-center gap-x-5 pl-4 shadow-sm sm:px-8;
+
+    & > * {
+      @apply shrink-0;
+    }
+
+    .logo {
+      span {
+        @apply hidden sm:block;
+      }
+    }
+
+    .shopLoc {
+      p {
+        @apply cursor-pointer p-0.5 text-xs;
+      }
+      .locSelect {
+        @apply flex cursor-pointer items-center gap-x-2;
+
+        span {
+          @apply font-bold;
+        }
+      }
+      .shopCollapse {
+        @apply fixed left-0 z-[100] flex w-full translate-y-2 flex-col space-y-6 bg-white p-4 shadow-md sm:absolute sm:left-auto sm:max-w-[300px] sm:rounded-lg;
+
+        .shopInfo {
+          @apply flex w-fit gap-x-2 self-center rounded-full bg-success px-4 py-2 text-xs text-white sm:self-start;
+
+          span {
+            @apply font-bold text-white;
+          }
+        }
+
+        p {
+          @apply w-4/5 self-center text-center sm:w-full sm:text-start sm:text-xs;
+        }
+
+        .searchInput {
+          span {
+            @apply cursor-pointer bg-success;
+          }
+        }
+
+        .closeIcon {
+          @apply absolute right-4 top-4 mt-0 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-white text-3xl shadow-lg;
+
+          svg {
+            @apply h-4 w-4;
+          }
+        }
+      }
+    }
+
+    .searchBar {
+      @apply my-4 shrink grow;
+    }
+
+    .hiddenSearchBar {
+      & * {
+        @apply hidden;
+      }
+    }
+
+    .buttonBar {
+      @apply my-2.5 hidden sm:flex;
+    }
+
+    .account {
+      @apply hidden items-center gap-x-2 sm:flex;
+
+      .icon {
+        @apply h-8 w-8 cursor-pointer;
+      }
+    }
+
+    .navToCart {
+      @apply relative flex cursor-pointer items-center justify-center self-center;
+
+      .icon {
+        @apply h-8 w-8;
+      }
+
+      .badge {
+        @apply absolute bottom-1 flex h-3 w-3 items-center justify-center rounded-full bg-success text-[8px] text-white;
+      }
+    }
+
+    .logout {
+      @apply cursor-pointer;
+      > svg {
+        @apply text-[32px];
+      }
+    }
+
+    .collapseIcon {
+      @apply flex aspect-square h-full cursor-pointer items-center justify-center bg-success sm:hidden;
+
+      svg {
+        @apply h-5 w-5;
+      }
+    }
+  }
+
+  .collapsePanel {
+    @apply relative flex w-full grow flex-col overflow-y-auto;
+
+    .subHeader {
+      @apply flex h-14 shrink-0 sm:hidden;
+
+      li {
+        @apply flex w-1/2 cursor-pointer items-center justify-center border-t-1 border-t-gray-300 bg-white text-xs font-bold;
+      }
+
+      .activeItem {
+        @apply border-t-1 border-t-primary bg-success text-white;
+      }
+
+      .namebar {
+        @apply flex shrink-0 grow-0 cursor-text items-center px-4 text-lg font-normal;
+      }
+    }
+
+    .collapseHeader {
+      @apply flex grow flex-col overflow-y-auto bg-primary;
+
+      .searchInput {
+        @apply m-4;
+
+        span {
+          @apply h-10 w-10 cursor-pointer bg-success;
+        }
+      }
+
+      .navbar {
+        @apply flex grow flex-col overflow-y-auto px-4 py-4;
+
+        .categories {
+          @apply flex flex-col space-y-2 overflow-y-auto;
+
+          p {
+            @apply flex shrink-0 cursor-pointer items-center gap-x-2;
+
+            svg {
+              @apply text-xs;
+            }
+          }
+
+          ul {
+            @apply grow space-y-6 overflow-y-auto;
+
+            li {
+              @apply cursor-pointer;
+            }
+          }
+        }
+
+        .divider {
+          @apply my-6 border-t-1 border-primary;
+        }
+
+        ul {
+          @apply space-y-6;
+
+          li {
+            @apply relative flex;
+          }
+        }
+      }
+
+      .sellButton {
+        @apply rounded-none py-2 text-lg font-normal;
+      }
+    }
+  }
+}
+
+.screen {
+  @apply flex grow flex-col overflow-y-auto;
+}

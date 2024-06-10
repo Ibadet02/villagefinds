@@ -1,0 +1,31 @@
+.root {
+  @apply space-y-4;
+
+  & > h1 {
+    @apply text-xl;
+  }
+
+  .form {
+    @apply space-y-8;
+
+    .control {
+      @apply space-y-2;
+
+      p {
+        @apply font-bold;
+      }
+
+      .textField {
+        @apply text-base;
+      }
+    }
+  }
+
+  .buttonBar {
+    @apply flex justify-end;
+
+    .button {
+      @apply rounded-full bg-dark px-9 py-3 text-xs text-white;
+    }
+  }
+}

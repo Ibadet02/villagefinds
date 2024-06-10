@@ -1,0 +1,7 @@
+.root {
+  @apply flex min-h-screen w-full bg-primary;
+
+  .container {
+    @apply grow overflow-x-auto px-6 py-4;
+  }
+}

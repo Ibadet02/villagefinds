@@ -1,0 +1,25 @@
+.root {
+  @apply flex flex-col gap-y-8;
+
+  .customCount {
+    @apply flex w-fit items-center gap-x-8;
+    > p {
+      @apply font-bold;
+    }
+    > span {
+      @apply flex min-w-[150px] items-center justify-center rounded-full bg-info py-1 text-2xl font-bold text-success;
+    }
+  }
+
+  .customerTable {
+    @apply flex flex-col gap-y-4;
+
+    .toolbar {
+      @apply flex items-center justify-between;
+
+      .input {
+        @apply min-w-0 max-w-[400px];
+      }
+    }
+  }
+}

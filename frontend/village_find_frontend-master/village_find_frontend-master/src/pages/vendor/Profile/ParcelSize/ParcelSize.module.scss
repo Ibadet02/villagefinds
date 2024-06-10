@@ -1,0 +1,36 @@
+.root {
+  .container {
+    @apply space-y-8;
+
+    .header {
+      @apply flex w-full;
+
+      .desc {
+        @apply shrink-0;
+      }
+
+      .buttonBar {
+        @apply flex w-full items-end justify-end;
+        .button {
+          @apply rounded-full bg-dark px-12 py-2 text-white;
+        }
+      }
+    }
+  }
+}
+
+.actionButton {
+  @apply rounded-full bg-dark px-12 py-2 text-white;
+}
+
+.actionCell {
+  @apply flex items-center gap-x-6;
+
+  .actionButton {
+    @apply px-6;
+  }
+
+  span {
+    @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-primary bg-warning;
+  }
+}

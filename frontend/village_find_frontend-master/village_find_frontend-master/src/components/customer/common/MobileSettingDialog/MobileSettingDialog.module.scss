@@ -1,0 +1,77 @@
+.root {
+  @apply fixed left-0 top-0 flex h-full w-full flex-col bg-white pt-[120px];
+
+  .scrollWrapper {
+    @apply flex flex-col overflow-y-auto;
+
+    .container {
+      @apply w-full grow space-y-8 py-4;
+
+      .closeBtn {
+        @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-dark;
+      }
+
+      .inputs {
+        @apply space-y-4;
+
+        .element {
+          @apply flex w-2/3 flex-col gap-y-1;
+
+          label {
+            @apply text-[16px] font-bold leading-[25px];
+          }
+
+          .select {
+            @apply w-full;
+
+            * {
+              @apply rounded-sm;
+            }
+
+            div {
+              @apply border-1.5 border-primary p-2 text-[16px] leading-[25px];
+            }
+          }
+        }
+      }
+
+      .radios {
+        @apply space-y-4;
+
+        .element {
+          @apply flex flex-col gap-y-1;
+
+          label {
+            @apply text-[16px] font-bold leading-[25px];
+          }
+
+          .radiogroup {
+            & span.active {
+              @apply border-primary bg-dark;
+            }
+          }
+        }
+      }
+
+      .buttons {
+        @apply flex gap-x-4;
+
+        .button {
+          @apply grow py-1.5 text-[20px] font-bold leading-[30px];
+        }
+
+        .applyBtn {
+          @apply bg-dark text-white;
+        }
+
+        .cancelBtn {
+          @apply border-2 border-primary bg-white text-dark;
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  @apply hidden;
+}

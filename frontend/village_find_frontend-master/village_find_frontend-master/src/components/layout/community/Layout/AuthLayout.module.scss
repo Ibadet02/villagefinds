@@ -1,0 +1,7 @@
+.root {
+  @apply flex h-screen w-full flex-col;
+
+  .content {
+    @apply grow overflow-y-auto;
+  }
+}

@@ -1,0 +1,39 @@
+.root {
+  @apply w-full overflow-x-auto;
+
+  .tableToolbar {
+    @apply my-8 text-base;
+  }
+
+  .tableBody {
+    @apply overflow-x-auto;
+
+    & * {
+      @apply text-base;
+    }
+  }
+}
+
+.statusSelector {
+  @apply w-fit min-w-0;
+}
+
+.actionCell {
+  @apply flex gap-x-6;
+
+  span {
+    @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-primary bg-warning;
+  }
+
+  button {
+    @apply px-6;
+  }
+}
+
+.buttonLabel {
+  @apply mb-2 text-white;
+}
+
+.actionButton {
+  @apply self-center rounded-full bg-dark px-12 py-2 text-base text-white;
+}

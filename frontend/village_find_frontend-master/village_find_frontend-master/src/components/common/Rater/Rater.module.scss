@@ -1,0 +1,9 @@
+.root {
+  @apply flex items-center gap-x-1;
+
+  > span {
+    > svg {
+      @apply fill-success stroke-success;
+    }
+  }
+}
